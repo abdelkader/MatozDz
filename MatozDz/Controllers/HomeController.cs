@@ -7,6 +7,15 @@ namespace MatozDz.Controllers
     [HandleError]
     public class HomeController : Controller
     {
+        private readonly IStoresRepository _repository;
+
+        public HomeController() : this(new StoresRepository()){ }
+
+        public HomeController(IStoresRepository repository)
+        {
+            _repository = repository;
+        }
+
         public ActionResult Index()
         {
             return View();
@@ -17,7 +26,12 @@ namespace MatozDz.Controllers
             return View();
         }
 
-       
+        [ChildActionOnly]
+        public ActionResult GetLastAddedStores()
+        {
+            var stores = _repository.GetLastAddedStores(5);
+            return PartialView("LastAddedStores", stores);
+        }
         
     }
 }

@@ -23,7 +23,7 @@
 [assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("MatozDzModel", "FK_Comment_Comment", "Store", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(MatozDz.Models.Store), "Comment", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(MatozDz.Models.Comment))]
 
 // Original file name:
-// Generation date: 2010-05-24 10:36:02
+// Generation date: 2010-05-24 14:48:22
 namespace MatozDz.Models
 {
     
@@ -2940,6 +2940,75 @@ namespace MatozDz.Models
         private string _email;
         partial void OnemailChanging(string value);
         partial void OnemailChanged();
+        /// <summary>
+        /// There are no comments for Property DateAdded in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Nullable<global::System.DateTime> DateAdded
+        {
+            get
+            {
+                return this._DateAdded;
+            }
+            set
+            {
+                this.OnDateAddedChanging(value);
+                this.ReportPropertyChanging("DateAdded");
+                this._DateAdded = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("DateAdded");
+                this.OnDateAddedChanged();
+            }
+        }
+        private global::System.Nullable<global::System.DateTime> _DateAdded;
+        partial void OnDateAddedChanging(global::System.Nullable<global::System.DateTime> value);
+        partial void OnDateAddedChanged();
+        /// <summary>
+        /// There are no comments for Property LastDateUpdated in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Nullable<global::System.DateTime> LastDateUpdated
+        {
+            get
+            {
+                return this._LastDateUpdated;
+            }
+            set
+            {
+                this.OnLastDateUpdatedChanging(value);
+                this.ReportPropertyChanging("LastDateUpdated");
+                this._LastDateUpdated = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("LastDateUpdated");
+                this.OnLastDateUpdatedChanged();
+            }
+        }
+        private global::System.Nullable<global::System.DateTime> _LastDateUpdated;
+        partial void OnLastDateUpdatedChanging(global::System.Nullable<global::System.DateTime> value);
+        partial void OnLastDateUpdatedChanged();
+        /// <summary>
+        /// There are no comments for Property UserId in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Nullable<global::System.Guid> UserId
+        {
+            get
+            {
+                return this._UserId;
+            }
+            set
+            {
+                this.OnUserIdChanging(value);
+                this.ReportPropertyChanging("UserId");
+                this._UserId = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("UserId");
+                this.OnUserIdChanged();
+            }
+        }
+        private global::System.Nullable<global::System.Guid> _UserId;
+        partial void OnUserIdChanging(global::System.Nullable<global::System.Guid> value);
+        partial void OnUserIdChanged();
         /// <summary>
         /// There are no comments for Wilaya in the schema.
         /// </summary>

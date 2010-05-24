@@ -20,24 +20,20 @@
 <div class="contentbox">
     <h3>Magasins</h3>
     <p><%= Html.ActionLink("Ajouter...","Ajout","Store") %></p>
-    <p><%= Html.ActionLink("Modifier...","Modifier","Store") %></p>
-    <p><%= Html.ActionLink("Supprimer...","Supprimer","Store") %></p>
+    <%--<p><%= Html.ActionLink("Modifier...","Modifier","Store") %></p>
+    <p><%= Html.ActionLink("Supprimer...","Supprimer","Store") %></p>--%>
 </div>
 
 <div class="contentbox">
     <h3>Derniers magasin ajoutés :</h3>
-    <p>This website has been redesigned using Visual Studio 2008 and C# where needed.  I even added some jQuery this time around.</p>
-    <p>A blog will be added shortly, along with a few MVC projects I want to build.</p>
+      <%= Html.Action("GetLastAddedStores")%>
+  
 </div>
 
 <div class="contentbox">
     <h3>A propos de...</h3>
+    <p>This website has been redesigned using Visual Studio 2008 and C# where needed.  I even added some jQuery this time around.</p>
+    <p>A blog will be added shortly, along with a few MVC projects I want to build.</p> 
     
-    
-    <ul class="center">
-    <%--<li><a href="http://twitter.com/MLaritz"><img src="/img/twitter.gif" alt="Twitter" /></a></li>
-    <li><a href="http://www.linkedin.com/in/martinlaritz"><img src="/img/linkedin.gif" alt="LinkedIn" /></a></li>
-    <li><a href="http://www.facebook.com/mlaritz"><img src="/img/facebook.jpg" alt="Facebook" /></a></li>--%>
-    </ul>
 </div>
 </asp:Content>

@@ -226,6 +226,9 @@
           <Property Name="url" Type="varchar" MaxLength="50" />
           <Property Name="email" Type="varchar" MaxLength="50" />
           <Property Name="WilayaId" Type="int" Nullable="false" />
+          <Property Name="DateAdded" Type="date" />
+          <Property Name="LastDateUpdated" Type="date" />
+          <Property Name="UserId" Type="uniqueidentifier" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -613,7 +616,10 @@
           <Property Name="url" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
           <Property Name="email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
           <NavigationProperty Name="Wilaya" Relationship="MatozDzModel.FK_Store_Wilaya" FromRole="Store" ToRole="Wilaya" />
-          <NavigationProperty Name="Comment" Relationship="MatozDzModel.FK_Comment_Comment" FromRole="Store" ToRole="Comment" /></EntityType>
+          <NavigationProperty Name="Comment" Relationship="MatozDzModel.FK_Comment_Comment" FromRole="Store" ToRole="Comment" />
+          <Property Name="DateAdded" Type="DateTime" Nullable="true" />
+          <Property Name="LastDateUpdated" Type="DateTime" Nullable="true" />
+          <Property Name="UserId" Type="Guid" Nullable="true" /></EntityType>
         <EntityType Name="Wilaya">
           <Key>
             <PropertyRef Name="WilayaId" />
@@ -835,6 +841,9 @@
           <EntitySetMapping Name="Store">
             <EntityTypeMapping TypeName="IsTypeOf(MatozDzModel.Store)">
               <MappingFragment StoreEntitySet="Store">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="LastDateUpdated" ColumnName="LastDateUpdated" />
+                <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
                 <ScalarProperty Name="StoreId" ColumnName="StoreId" />
                 <ScalarProperty Name="name" ColumnName="name" />
                 <ScalarProperty Name="address" ColumnName="address" />

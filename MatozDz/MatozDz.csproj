@@ -91,7 +91,9 @@
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Views\Store\Ajout.aspx" />
+    <Content Include="Views\Store\Details.aspx" />
     <Content Include="Views\Store\Index.aspx" />
+    <Content Include="Views\Shared\LastAddedStores.ascx" />
     <Content Include="Views\Store\Store.aspx" />
     <Content Include="Views\Store\Wilaya.aspx" />
     <Content Include="Web.config" />
