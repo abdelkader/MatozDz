@@ -1,0 +1,11 @@
+h2{color:blue}C'est quoi
+===========
+
+A simple website made with asp.net mvc. Basically, it lists all computer
+and electronics stores all over the country. Just a pet project to learn MVC 
+
+
+TODO:
++ Add logging
++ Add Validation
+

@@ -1,0 +1,401 @@
+﻿/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End Reset */
+
+body
+{
+	font-family: Calibri, 'Trebuchet MS', Tahoma, Arial, Sans-Serif;
+	background: #222222;
+}
+
+#page
+{
+	width: 900px;
+	margin: 0 auto;
+	background: #fff;
+	margin-top:30px
+}
+#loginDisplay
+	{
+		float: right;
+		margin-right: 20px;
+	}
+h4
+{
+    margin: 5px 0 5px 20px;
+    font-size: 1.2em;
+    color: #c16212;
+}
+
+#header
+{
+	height: 70px;
+	width: 100%;
+	padding-top: 15px;
+}
+
+#logo
+{
+	margin-left: 20px;
+	float: left;
+}
+	
+	
+#menu
+{
+	width: 100%;
+	height: 40px;
+	background: #222222;
+	font-size: 20px;
+	
+}
+
+#menu ul
+{
+	list-style: none;
+	padding: 9px 0 0 12px;
+	float: right;
+}
+	
+#menu li
+{
+	display: inline;
+	color: #fff;
+	padding: 0 8px 2px 8px;
+}
+
+#menu li:hover
+{
+	background: url("../img/hover-menu.gif");
+}
+
+#menu li a
+{
+	color: #fff;
+}
+	
+#subheader
+{
+	width: 100%;
+	height: 130px;
+	
+	font-size: 24px;
+	
+	line-height: 1.2em;
+	margin-top: 70px;
+	
+	padding: 0;
+}
+
+#subheader h2
+{
+	margin: 12px 0 5px 0;
+	font-size: 28px;
+}
+
+#wwdev
+{
+	float: left;
+	margin-left: 20px;
+	padding: 0;
+}
+
+#contact
+{
+	float: right;
+	margin-right: 20px;
+	text-align: right;
+}	
+
+#contact a
+{
+	color: #fff;
+}
+	
+#content
+{
+	background: #fff;
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.contentbox
+{
+	background: #f2f2f2;
+	border: 1px solid #c0c0c0;
+	width: 218px;
+	padding: 20px;
+	height: 200px;
+	margin: 10px 20px 0 20px;
+	float: left;
+}
+
+.contentbox h3
+{
+	font-size: 22px;
+	text-align: center;
+	margin-bottom: 20px;
+	color: #1378ca;
+}
+
+.contentbox p, .contentbox li
+{
+	margin-bottom: 10px;
+}
+
+#footer
+{
+	width: 100%;
+	height: 40px;
+	background: #fff;
+	
+	color: #1378ca;
+}
+
+#footer p
+{
+	margin: 10px 0 0 20px;
+}
+	
+
+.clearfix {
+	display: inline-block;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+	 
+* html .clearfix {
+	height: 1%;
+}
+
+#searchform
+{
+ text-align: center;
+
+}
+
+/* buttons */
+#searchform button {
+  font: 0.8em "Helvetica Neue", Arial, sans-serif;
+  color: #33;
+  padding: 0.50em 10px;
+  line-height: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  background: #e9eaea url(img/buttonbg.png) repeat-x;
+  border: 1px solid #ccc;
+  text-shadow: 1px 1px 0 #fff;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+#searchform button:hover {
+  opacity: 0.8;
+}
+#searchform button:active {
+  opacity: 1;
+}
+#searchform input
+{
+
+
+	border: 3px solid #EEEEEE;
+	color: #808080;
+	font-weight: bold;
+	font-family: "Lucida Grande",Verdana,sans-serif;
+	height: 35px;
+
+	padding-left: 30px;
+	padding-top:6px;
+	width: 300px;
+	font-size: 1em;
+	vertical-align: middle;
+	text-decoration: none;
+    -moz-border-radius-bottomleft: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+}
+#searchform input:hover
+{
+	border: #d3d3d3 3px solid;
+}
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.error
+{
+    color:Red;
+}
+
+
+div#title
+{
+    display:block;
+    float:left;
+    text-align:left;
+}
+
+#logindisplay
+{
+    font-size:1.1em;
+    display:block;
+    text-align:right;
+    margin:10px;
+    color:White;
+}
+
+#logindisplay a:link
+{
+    color: white;
+    text-decoration: underline;
+}
+
+#logindisplay a:visited
+{
+    color: white;
+    text-decoration: underline;
+}
+
+#logindisplay a:hover
+{
+    color: white;
+    text-decoration: none;
+}
+
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+    margin-left:100px;
+}
+
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset 
+{
+    margin: 1em 0;
+	margin-left:auto;
+	margin-right:auto;
+    padding: 1em;
+    border: 1px solid #CCC;
+	width:500px;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset label 
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input[type="text"] 
+{
+    width: 200px;
+    border: 1px solid #CCC;
+}
+
+input[type="password"] 
+{
+    width: 200px;
+    border: 1px solid #CCC;
+}
+
+.spacer
+{
+    margin-top:20px;
+    margin-left:100px;
+    margin-bottom:20px;
+
+}
