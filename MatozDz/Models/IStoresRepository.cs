@@ -13,6 +13,8 @@ namespace MatozDz.Models
         void Save();
         void Add(Store store, string id);
         IQueryable<Store> GetStoresByWilayaId(int id);
+        Store GetStoreById(int id);
+        void MarkStoreAsDeleted(int id);
     }
 }
 

@@ -23,7 +23,7 @@
 [assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("MatozDzModel", "FK_Comment_Comment", "Store", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(MatozDz.Models.Store), "Comment", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(MatozDz.Models.Comment))]
 
 // Original file name:
-// Generation date: 2010-05-24 14:48:22
+// Generation date: 2010-05-24 17:57:56
 namespace MatozDz.Models
 {
     
@@ -3009,6 +3009,29 @@ namespace MatozDz.Models
         private global::System.Nullable<global::System.Guid> _UserId;
         partial void OnUserIdChanging(global::System.Nullable<global::System.Guid> value);
         partial void OnUserIdChanged();
+        /// <summary>
+        /// There are no comments for Property IsDeleted in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Nullable<bool> IsDeleted
+        {
+            get
+            {
+                return this._IsDeleted;
+            }
+            set
+            {
+                this.OnIsDeletedChanging(value);
+                this.ReportPropertyChanging("IsDeleted");
+                this._IsDeleted = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("IsDeleted");
+                this.OnIsDeletedChanged();
+            }
+        }
+        private global::System.Nullable<bool> _IsDeleted;
+        partial void OnIsDeletedChanging(global::System.Nullable<bool> value);
+        partial void OnIsDeletedChanged();
         /// <summary>
         /// There are no comments for Wilaya in the schema.
         /// </summary>

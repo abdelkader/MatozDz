@@ -229,6 +229,7 @@
           <Property Name="DateAdded" Type="date" />
           <Property Name="LastDateUpdated" Type="date" />
           <Property Name="UserId" Type="uniqueidentifier" />
+          <Property Name="IsDeleted" Type="bit" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -619,7 +620,8 @@
           <NavigationProperty Name="Comment" Relationship="MatozDzModel.FK_Comment_Comment" FromRole="Store" ToRole="Comment" />
           <Property Name="DateAdded" Type="DateTime" Nullable="true" />
           <Property Name="LastDateUpdated" Type="DateTime" Nullable="true" />
-          <Property Name="UserId" Type="Guid" Nullable="true" /></EntityType>
+          <Property Name="UserId" Type="Guid" Nullable="true" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="true" /></EntityType>
         <EntityType Name="Wilaya">
           <Key>
             <PropertyRef Name="WilayaId" />
@@ -841,6 +843,7 @@
           <EntitySetMapping Name="Store">
             <EntityTypeMapping TypeName="IsTypeOf(MatozDzModel.Store)">
               <MappingFragment StoreEntitySet="Store">
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
                 <ScalarProperty Name="LastDateUpdated" ColumnName="LastDateUpdated" />
                 <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />

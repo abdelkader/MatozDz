@@ -7,6 +7,7 @@
 <asp:Content ID="aboutContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2>About</h2>
     <p>
-        Put content here.
+       This website has been redesigned using Visual Studio 2008 and C# where needed. I even added some jQuery this time around.
+       A blog will be added shortly, along with a few MVC projects I want to build.
     </p>
 </asp:Content>

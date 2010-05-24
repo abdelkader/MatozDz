@@ -20,12 +20,11 @@
 <div class="contentbox">
     <h3>Magasins</h3>
     <p><%= Html.ActionLink("Ajouter...","Ajout","Store") %></p>
-    <%--<p><%= Html.ActionLink("Modifier...","Modifier","Store") %></p>
-    <p><%= Html.ActionLink("Supprimer...","Supprimer","Store") %></p>--%>
+
 </div>
 
 <div class="contentbox">
-    <h3>Derniers magasin ajoutés :</h3>
+    <h3>Derniers magasins ajoutés :</h3>
       <%= Html.Action("GetLastAddedStores")%>
   
 </div>

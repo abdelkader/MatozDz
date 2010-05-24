@@ -59,11 +59,11 @@
                 <%= Html.LabelFor(model => model.Wilaya) %>
             </div>
             <div class="editor-field">
-              <%= Html.DropDownList("WilayaId", (IEnumerable<SelectListItem>)ViewData["Wilayas"])%>
+              <%= Html.DropDownList("WilayaId", ViewData["Wilayas"] as IEnumerable<SelectListItem>)%>
             </div>
             
             <p>
-                <input type="submit" value="Create" />
+                <input type="submit" value="Ajouter" />
             </p>
         </fieldset>
 

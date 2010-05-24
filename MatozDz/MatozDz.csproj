@@ -68,7 +68,6 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StoreController.cs" />
-    <Compile Include="Controllers\TotoController.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -76,6 +75,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\HtmlHelper.cs" />
     <Compile Include="Models\IStoresRepository.cs" />
     <Compile Include="Models\MatozDzModel.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -91,10 +91,12 @@
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Views\Store\Ajout.aspx" />
-    <Content Include="Views\Store\Details.aspx" />
+    <Content Include="Views\Store\Detail.aspx" />
+    <Content Include="Views\Store\Edit.aspx" />
     <Content Include="Views\Store\Index.aspx" />
     <Content Include="Views\Shared\LastAddedStores.ascx" />
     <Content Include="Views\Store\Store.aspx" />
+    <Content Include="Views\Store\Supprimer.aspx" />
     <Content Include="Views\Store\Wilaya.aspx" />
     <Content Include="Web.config" />
     <Content Include="Content\Site.css" />

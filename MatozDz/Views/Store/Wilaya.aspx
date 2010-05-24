@@ -26,7 +26,7 @@
         <tr>
             <td>
                 <%= Html.ActionLink("Edit", "Edit", new { id=item.StoreId }) %> |
-                <%= Html.ActionLink("Details", "Details", new { id=item.StoreId })%> |
+                <%= Html.ActionLink("Detail", "Detail", new { id=item.StoreId })%> |
                 <%= Html.ActionLink("Delete", "Delete", new { id=item.StoreId })%>
             </td>
             
@@ -44,7 +44,7 @@
     </table>
 
     <p>
-        <%= Html.ActionLink("Ajouter un magasin", "Create") %>
+        <%= Html.ActionLink("Ajouter un magasin", "Ajout") %>
     </p>
 
 </asp:Content>
