@@ -228,8 +228,9 @@
           <Property Name="WilayaId" Type="int" Nullable="false" />
           <Property Name="DateAdded" Type="date" />
           <Property Name="LastDateUpdated" Type="date" />
-          <Property Name="UserId" Type="uniqueidentifier" />
           <Property Name="IsDeleted" Type="bit" />
+          <Property Name="AddedByUser" Type="varchar" MaxLength="50" />
+          <Property Name="UpdatedByUser" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -620,8 +621,9 @@
           <NavigationProperty Name="Comment" Relationship="MatozDzModel.FK_Comment_Comment" FromRole="Store" ToRole="Comment" />
           <Property Name="DateAdded" Type="DateTime" Nullable="true" />
           <Property Name="LastDateUpdated" Type="DateTime" Nullable="true" />
-          <Property Name="UserId" Type="Guid" Nullable="true" />
-          <Property Name="IsDeleted" Type="Boolean" Nullable="true" /></EntityType>
+          <Property Name="IsDeleted" Type="Boolean" Nullable="true" />
+          <Property Name="AddedByUser" Type="String" Nullable="true" />
+          <Property Name="UpdatedByUser" Type="String" Nullable="true" /></EntityType>
         <EntityType Name="Wilaya">
           <Key>
             <PropertyRef Name="WilayaId" />
@@ -843,8 +845,9 @@
           <EntitySetMapping Name="Store">
             <EntityTypeMapping TypeName="IsTypeOf(MatozDzModel.Store)">
               <MappingFragment StoreEntitySet="Store">
+                <ScalarProperty Name="UpdatedByUser" ColumnName="UpdatedByUser" />
+                <ScalarProperty Name="AddedByUser" ColumnName="AddedByUser" />
                 <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
-                <ScalarProperty Name="UserId" ColumnName="UserId" />
                 <ScalarProperty Name="LastDateUpdated" ColumnName="LastDateUpdated" />
                 <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
                 <ScalarProperty Name="StoreId" ColumnName="StoreId" />
@@ -994,7 +997,7 @@
         <EntityTypeShape EntityType="MatozDzModel.aspnet_SchemaVersions" Width="1.5" PointX="0.75" PointY="0.75" Height="0.4" IsExpanded="false" />
         <EntityTypeShape EntityType="MatozDzModel.aspnet_Users" Width="1.5" PointX="6.125" PointY="3.5" Height="3.1340950520833326" IsExpanded="true" />
         <EntityTypeShape EntityType="MatozDzModel.aspnet_WebEvent_Events" Width="1.5" PointX="5" PointY="6.75" Height="0.4" IsExpanded="false" />
-        <EntityTypeShape EntityType="MatozDzModel.Store" Width="1.5" PointX="10" PointY="1" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="MatozDzModel.Store" Width="1.5" PointX="10" PointY="1" Height="3.5186979166666656" IsExpanded="true" />
         <EntityTypeShape EntityType="MatozDzModel.Wilaya" Width="1.5" PointX="7.75" PointY="1.375" Height="1.5956835937499998" IsExpanded="true" />
         <AssociationConnector Association="MatozDzModel.FK__aspnet_Me__Appli__38996AB5" ManuallyRouted="false">
           <ConnectorPoint PointX="2.3125" PointY="5.125" />

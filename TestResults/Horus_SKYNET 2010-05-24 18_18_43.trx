@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="6557bea9-fb82-4abb-9a1f-3faddc7b18d2" name="Horus@SKYNET 2010-05-24 18:18:43" runUser="SkyNet\Horus" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Default Run Configuration" id="ebc1c860-a1de-4ba8-9021-51b6ea983a33">
+    <Deployment runDeploymentRoot="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\TestResults\Horus_SKYNET 2010-05-24 18_18_43">
+      <DeploymentItem filename="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz\bin\MatozDz.dll" />
+    </Deployment>
+    <Hosts skipUnhostableTests="false" />
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="26" executed="26" passed="25" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2010-05-24T18:18:43.5440132-04:00" queuing="2010-05-24T18:18:47.2942277-04:00" start="2010-05-24T18:18:47.7812555-04:00" finish="2010-05-24T18:18:52.6785356-04:00" />
+  <TestDefinitions>
+    <UnitTest name="RegisterPostReturnsViewIfRegistrationFails" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="edfd9a58-9ab3-b60a-6a6c-3a2f7153df38">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="503dc439-18eb-4870-bd5a-b92258986ade" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="RegisterPostReturnsViewIfRegistrationFails" />
+    </UnitTest>
+    <UnitTest name="ChangePasswordPostReturnsViewIfCurrentPasswordNotSpecified" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="3c5750ae-d54e-5654-b6dd-fb7660f6e6d6">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="0bd7880e-b2c9-41bf-b0ac-4fea1eb44d62" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="ChangePasswordPostReturnsViewIfCurrentPasswordNotSpecified" />
+    </UnitTest>
+    <UnitTest name="RegisterPostReturnsViewIfNewPasswordDoesNotMatchConfirmPassword" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="7b72557b-f4f3-0169-4308-2f572e39d95b">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="9595691b-1b39-497d-a2ad-d5106ec5c9ac" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="RegisterPostReturnsViewIfNewPasswordDoesNotMatchConfirmPassword" />
+    </UnitTest>
+    <UnitTest name="LogOff" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="9828ba1b-a8c2-15f7-91c2-4d06e2eeb36e">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="9feb977e-0e09-4d4e-a5b9-1b972cfc79fb" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="LogOff" />
+    </UnitTest>
+    <UnitTest name="ChangePasswordPostReturnsViewIfNewPasswordIsTooShort" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="92d750e1-a809-cb20-7701-0c6a27c4f0cf">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="5eb0cc46-9406-4f6f-a244-d2050f9607aa" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="ChangePasswordPostReturnsViewIfNewPasswordIsTooShort" />
+    </UnitTest>
+    <UnitTest name="ChangePasswordPostReturnsViewIfNewPasswordIsNull" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="8e8d4803-cf26-e534-24b3-73c5a0178cdf">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="6763e1de-e12f-478e-8642-cb89953fd295" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="ChangePasswordPostReturnsViewIfNewPasswordIsNull" />
+    </UnitTest>
+    <UnitTest name="RegisterPostReturnsViewIfEmailNotSpecified" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="cf856182-5fe9-6fbf-d16d-6d11bbb2deb5">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="3a97356e-6c92-47c5-9cec-7cbf97f4ff7f" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="RegisterPostReturnsViewIfEmailNotSpecified" />
+    </UnitTest>
+    <UnitTest name="ChangePasswordPostRedirectsOnSuccess" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="069d5d8f-e259-5dce-f1c0-6904771e0a23">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="698c4229-e70d-45f2-986b-5adbb378db7e" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="ChangePasswordPostRedirectsOnSuccess" />
+    </UnitTest>
+    <UnitTest name="LoginPostReturnsViewIfUsernameOrPasswordIsIncorrect" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="37dfb60e-7e9f-c930-6c91-2137f5e7feb2">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="53d42fd0-127d-4621-8ba5-23a730f6a8a2" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="LoginPostReturnsViewIfUsernameOrPasswordIsIncorrect" />
+    </UnitTest>
+    <UnitTest name="ChangePasswordGetReturnsView" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="0a7f453c-5904-f2bf-f36a-5014a7c89ed4">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="f8a0c278-29b7-4a48-a237-bcb17f7b6571" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="ChangePasswordGetReturnsView" />
+    </UnitTest>
+    <UnitTest name="LoginGet" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="03361f2c-a02a-fdcd-b9b9-2e8f894080d1">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="632ba65e-5439-4ae1-80b0-82ca7e6fdc28" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="LoginGet" />
+    </UnitTest>
+    <UnitTest name="ConstructorSetsProperties" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="1445f4ea-da88-ebf0-d788-652b3f12165b">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="b2386e46-694a-4d85-b49e-d9fda3f234a4" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="ConstructorSetsProperties" />
+    </UnitTest>
+    <UnitTest name="RegisterPostReturnsViewIfPasswordIsNull" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="ca92acac-163e-4e33-d2ba-d002704af95a">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="a23b7226-f195-4dd1-a852-00d11adc5439" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="RegisterPostReturnsViewIfPasswordIsNull" />
+    </UnitTest>
+    <UnitTest name="RegisterPostReturnsViewIfUsernameNotSpecified" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="867e847b-45ad-8c3d-cba2-19573cbd72dd">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="159065e3-4fcc-45d8-af85-43e0d5fc481d" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="RegisterPostReturnsViewIfUsernameNotSpecified" />
+    </UnitTest>
+    <UnitTest name="ConstructorSetsPropertiesToDefaultValues" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="84207a5e-5ea6-d259-f96c-6824da00e75b">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="43e98e7c-ea8b-4262-a1d7-2f04decc3a84" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="ConstructorSetsPropertiesToDefaultValues" />
+    </UnitTest>
+    <UnitTest name="LoginPostReturnsViewIfPasswordNotSpecified" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="b24967be-a82a-c881-175f-f8c4b7f521fb">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="7b97f9ba-334c-41c0-8f69-637bb4a6f17e" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="LoginPostReturnsViewIfPasswordNotSpecified" />
+    </UnitTest>
+    <UnitTest name="ChangePasswordSuccess" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="31643a1b-5291-6a2e-6366-2be1fd54189a">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="8cea790a-f5c5-49bb-9fdb-efc37ebd62eb" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="ChangePasswordSuccess" />
+    </UnitTest>
+    <UnitTest name="ChangePasswordPostReturnsViewIfNewPasswordDoesNotMatchConfirmPassword" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="4b61dc4a-c50c-c234-4639-aea86125e359">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="436c01fe-cfa1-4d86-bcf4-ad7573df0397" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="ChangePasswordPostReturnsViewIfNewPasswordDoesNotMatchConfirmPassword" />
+    </UnitTest>
+    <UnitTest name="About" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="246cfd1f-1bd7-e31f-df15-896476b32d86">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="a7fcbac8-a275-48e3-aaad-cdd08278e4e3" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.HomeControllerTest, MatozDz.Tests" name="About" />
+    </UnitTest>
+    <UnitTest name="LoginPostRedirectsToReturnUrlIfLoginSuccessfulAndReturnUrlGiven" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="b5aeb3df-c1ca-fb3a-8002-27672db6307f">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="d272503d-141e-42cb-98a3-48ab28a140d4" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="LoginPostRedirectsToReturnUrlIfLoginSuccessfulAndReturnUrlGiven" />
+    </UnitTest>
+    <UnitTest name="RegisterPostReturnsViewIfPasswordIsTooShort" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="5cea7934-393b-e1e2-618f-1997dd69098a">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="beb91f68-04ab-4cb2-90bf-bebf48eaeb5f" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="RegisterPostReturnsViewIfPasswordIsTooShort" />
+    </UnitTest>
+    <UnitTest name="RegisterGet" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="a6791254-787a-fa12-3c28-68b847a3aee2">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="949d5e8d-f1e3-4343-b238-f234b5fc2fa4" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="RegisterGet" />
+    </UnitTest>
+    <UnitTest name="ChangePasswordPostReturnsViewIfProviderRejectsPassword" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="2c22fde1-3ca1-2770-2133-70b836ae896e">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="3c791940-fbe8-459a-9329-398ac94c872e" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="ChangePasswordPostReturnsViewIfProviderRejectsPassword" />
+    </UnitTest>
+    <UnitTest name="RegisterPostRedirectsHomeIfRegistrationSuccessful" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="6ebb0810-211a-a4e1-775c-fe38b606a877">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="66ca7e32-643b-4e71-8f78-632129767dae" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="RegisterPostRedirectsHomeIfRegistrationSuccessful" />
+    </UnitTest>
+    <UnitTest name="LoginPostReturnsViewIfUsernameNotSpecified" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="74097b89-cd70-d627-b081-a2899a99cd36">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="35cef21d-b4ad-4671-b242-b006568901ac" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="LoginPostReturnsViewIfUsernameNotSpecified" />
+    </UnitTest>
+    <UnitTest name="LoginPostRedirectsHomeIfLoginSuccessfulButNoReturnUrlGiven" storage="c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="8c66aa41-849e-e769-1558-175b08b172b3">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="8d249fba-d506-4ca8-9d23-9af7e01c1cae" />
+      <TestMethod codeBase="C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="LoginPostRedirectsHomeIfLoginSuccessfulButNoReturnUrlGiven" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0a7f453c-5904-f2bf-f36a-5014a7c89ed4" executionId="f8a0c278-29b7-4a48-a237-bcb17f7b6571" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="069d5d8f-e259-5dce-f1c0-6904771e0a23" executionId="698c4229-e70d-45f2-986b-5adbb378db7e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3c5750ae-d54e-5654-b6dd-fb7660f6e6d6" executionId="0bd7880e-b2c9-41bf-b0ac-4fea1eb44d62" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4b61dc4a-c50c-c234-4639-aea86125e359" executionId="436c01fe-cfa1-4d86-bcf4-ad7573df0397" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8e8d4803-cf26-e534-24b3-73c5a0178cdf" executionId="6763e1de-e12f-478e-8642-cb89953fd295" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92d750e1-a809-cb20-7701-0c6a27c4f0cf" executionId="5eb0cc46-9406-4f6f-a244-d2050f9607aa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2c22fde1-3ca1-2770-2133-70b836ae896e" executionId="3c791940-fbe8-459a-9329-398ac94c872e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="31643a1b-5291-6a2e-6366-2be1fd54189a" executionId="8cea790a-f5c5-49bb-9fdb-efc37ebd62eb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1445f4ea-da88-ebf0-d788-652b3f12165b" executionId="b2386e46-694a-4d85-b49e-d9fda3f234a4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="84207a5e-5ea6-d259-f96c-6824da00e75b" executionId="43e98e7c-ea8b-4262-a1d7-2f04decc3a84" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="03361f2c-a02a-fdcd-b9b9-2e8f894080d1" executionId="632ba65e-5439-4ae1-80b0-82ca7e6fdc28" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8c66aa41-849e-e769-1558-175b08b172b3" executionId="8d249fba-d506-4ca8-9d23-9af7e01c1cae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b5aeb3df-c1ca-fb3a-8002-27672db6307f" executionId="d272503d-141e-42cb-98a3-48ab28a140d4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b24967be-a82a-c881-175f-f8c4b7f521fb" executionId="7b97f9ba-334c-41c0-8f69-637bb4a6f17e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="74097b89-cd70-d627-b081-a2899a99cd36" executionId="35cef21d-b4ad-4671-b242-b006568901ac" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="37dfb60e-7e9f-c930-6c91-2137f5e7feb2" executionId="53d42fd0-127d-4621-8ba5-23a730f6a8a2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9828ba1b-a8c2-15f7-91c2-4d06e2eeb36e" executionId="9feb977e-0e09-4d4e-a5b9-1b972cfc79fb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a6791254-787a-fa12-3c28-68b847a3aee2" executionId="949d5e8d-f1e3-4343-b238-f234b5fc2fa4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6ebb0810-211a-a4e1-775c-fe38b606a877" executionId="66ca7e32-643b-4e71-8f78-632129767dae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cf856182-5fe9-6fbf-d16d-6d11bbb2deb5" executionId="3a97356e-6c92-47c5-9cec-7cbf97f4ff7f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b72557b-f4f3-0169-4308-2f572e39d95b" executionId="9595691b-1b39-497d-a2ad-d5106ec5c9ac" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ca92acac-163e-4e33-d2ba-d002704af95a" executionId="a23b7226-f195-4dd1-a852-00d11adc5439" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5cea7934-393b-e1e2-618f-1997dd69098a" executionId="beb91f68-04ab-4cb2-90bf-bebf48eaeb5f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="edfd9a58-9ab3-b60a-6a6c-3a2f7153df38" executionId="503dc439-18eb-4870-bd5a-b92258986ade" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="867e847b-45ad-8c3d-cba2-19573cbd72dd" executionId="159065e3-4fcc-45d8-af85-43e0d5fc481d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="246cfd1f-1bd7-e31f-df15-896476b32d86" executionId="a7fcbac8-a275-48e3-aaad-cdd08278e4e3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="f8a0c278-29b7-4a48-a237-bcb17f7b6571" testId="0a7f453c-5904-f2bf-f36a-5014a7c89ed4" testName="ChangePasswordGetReturnsView" computerName="SKYNET" duration="00:00:00.1066058" startTime="2010-05-24T18:18:48.0402703-04:00" endTime="2010-05-24T18:18:49.0923305-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="698c4229-e70d-45f2-986b-5adbb378db7e" testId="069d5d8f-e259-5dce-f1c0-6904771e0a23" testName="ChangePasswordPostRedirectsOnSuccess" computerName="SKYNET" duration="00:00:00.0037212" startTime="2010-05-24T18:18:49.1143318-04:00" endTime="2010-05-24T18:18:49.1253324-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0bd7880e-b2c9-41bf-b0ac-4fea1eb44d62" testId="3c5750ae-d54e-5654-b6dd-fb7660f6e6d6" testName="ChangePasswordPostReturnsViewIfCurrentPasswordNotSpecified" computerName="SKYNET" duration="00:00:00.0013414" startTime="2010-05-24T18:18:49.1393332-04:00" endTime="2010-05-24T18:18:49.1453335-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="436c01fe-cfa1-4d86-bcf4-ad7573df0397" testId="4b61dc4a-c50c-c234-4639-aea86125e359" testName="ChangePasswordPostReturnsViewIfNewPasswordDoesNotMatchConfirmPassword" computerName="SKYNET" duration="00:00:00.0006209" startTime="2010-05-24T18:18:49.1563342-04:00" endTime="2010-05-24T18:18:49.1623345-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6763e1de-e12f-478e-8642-cb89953fd295" testId="8e8d4803-cf26-e534-24b3-73c5a0178cdf" testName="ChangePasswordPostReturnsViewIfNewPasswordIsNull" computerName="SKYNET" duration="00:00:00.0006386" startTime="2010-05-24T18:18:49.1723351-04:00" endTime="2010-05-24T18:18:49.1783354-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5eb0cc46-9406-4f6f-a244-d2050f9607aa" testId="92d750e1-a809-cb20-7701-0c6a27c4f0cf" testName="ChangePasswordPostReturnsViewIfNewPasswordIsTooShort" computerName="SKYNET" duration="00:00:00.0005431" startTime="2010-05-24T18:18:49.1863359-04:00" endTime="2010-05-24T18:18:49.1923362-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3c791940-fbe8-459a-9329-398ac94c872e" testId="2c22fde1-3ca1-2770-2133-70b836ae896e" testName="ChangePasswordPostReturnsViewIfProviderRejectsPassword" computerName="SKYNET" duration="00:00:00.0005706" startTime="2010-05-24T18:18:49.2003367-04:00" endTime="2010-05-24T18:18:49.2063370-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8cea790a-f5c5-49bb-9fdb-efc37ebd62eb" testId="31643a1b-5291-6a2e-6366-2be1fd54189a" testName="ChangePasswordSuccess" computerName="SKYNET" duration="00:00:00.0007568" startTime="2010-05-24T18:18:49.2143375-04:00" endTime="2010-05-24T18:18:49.2193378-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b2386e46-694a-4d85-b49e-d9fda3f234a4" testId="1445f4ea-da88-ebf0-d788-652b3f12165b" testName="ConstructorSetsProperties" computerName="SKYNET" duration="00:00:00.1168141" startTime="2010-05-24T18:18:49.2293384-04:00" endTime="2010-05-24T18:18:49.3533454-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="43e98e7c-ea8b-4262-a1d7-2f04decc3a84" testId="84207a5e-5ea6-d259-f96c-6824da00e75b" testName="ConstructorSetsPropertiesToDefaultValues" computerName="SKYNET" duration="00:00:00.0009848" startTime="2010-05-24T18:18:49.3663462-04:00" endTime="2010-05-24T18:18:49.3743466-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="632ba65e-5439-4ae1-80b0-82ca7e6fdc28" testId="03361f2c-a02a-fdcd-b9b9-2e8f894080d1" testName="LoginGet" computerName="SKYNET" duration="00:00:00.0007894" startTime="2010-05-24T18:18:49.3943478-04:00" endTime="2010-05-24T18:18:49.4023482-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8d249fba-d506-4ca8-9d23-9af7e01c1cae" testId="8c66aa41-849e-e769-1558-175b08b172b3" testName="LoginPostRedirectsHomeIfLoginSuccessfulButNoReturnUrlGiven" computerName="SKYNET" duration="00:00:00.0020870" startTime="2010-05-24T18:18:49.4213493-04:00" endTime="2010-05-24T18:18:49.4313499-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d272503d-141e-42cb-98a3-48ab28a140d4" testId="b5aeb3df-c1ca-fb3a-8002-27672db6307f" testName="LoginPostRedirectsToReturnUrlIfLoginSuccessfulAndReturnUrlGiven" computerName="SKYNET" duration="00:00:00.0003974" startTime="2010-05-24T18:18:49.4493509-04:00" endTime="2010-05-24T18:18:49.4553513-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7b97f9ba-334c-41c0-8f69-637bb4a6f17e" testId="b24967be-a82a-c881-175f-f8c4b7f521fb" testName="LoginPostReturnsViewIfPasswordNotSpecified" computerName="SKYNET" duration="00:00:00.0005557" startTime="2010-05-24T18:18:49.4633517-04:00" endTime="2010-05-24T18:18:49.4683520-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="35cef21d-b4ad-4671-b242-b006568901ac" testId="74097b89-cd70-d627-b081-a2899a99cd36" testName="LoginPostReturnsViewIfUsernameNotSpecified" computerName="SKYNET" duration="00:00:00.0004952" startTime="2010-05-24T18:18:49.4763525-04:00" endTime="2010-05-24T18:18:49.4823528-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="53d42fd0-127d-4621-8ba5-23a730f6a8a2" testId="37dfb60e-7e9f-c930-6c91-2137f5e7feb2" testName="LoginPostReturnsViewIfUsernameOrPasswordIsIncorrect" computerName="SKYNET" duration="00:00:00.0005380" startTime="2010-05-24T18:18:49.4893532-04:00" endTime="2010-05-24T18:18:49.4943535-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9feb977e-0e09-4d4e-a5b9-1b972cfc79fb" testId="9828ba1b-a8c2-15f7-91c2-4d06e2eeb36e" testName="LogOff" computerName="SKYNET" duration="00:00:00.0008122" startTime="2010-05-24T18:18:49.5023540-04:00" endTime="2010-05-24T18:18:49.5073543-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="949d5e8d-f1e3-4343-b238-f234b5fc2fa4" testId="a6791254-787a-fa12-3c28-68b847a3aee2" testName="RegisterGet" computerName="SKYNET" duration="00:00:00.0005887" startTime="2010-05-24T18:18:49.5153547-04:00" endTime="2010-05-24T18:18:49.5203550-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="66ca7e32-643b-4e71-8f78-632129767dae" testId="6ebb0810-211a-a4e1-775c-fe38b606a877" testName="RegisterPostRedirectsHomeIfRegistrationSuccessful" computerName="SKYNET" duration="00:00:00.0022579" startTime="2010-05-24T18:18:49.5293555-04:00" endTime="2010-05-24T18:18:49.5353559-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3a97356e-6c92-47c5-9cec-7cbf97f4ff7f" testId="cf856182-5fe9-6fbf-d16d-6d11bbb2deb5" testName="RegisterPostReturnsViewIfEmailNotSpecified" computerName="SKYNET" duration="00:00:00.0005711" startTime="2010-05-24T18:18:49.5413562-04:00" endTime="2010-05-24T18:18:49.5463565-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9595691b-1b39-497d-a2ad-d5106ec5c9ac" testId="7b72557b-f4f3-0169-4308-2f572e39d95b" testName="RegisterPostReturnsViewIfNewPasswordDoesNotMatchConfirmPassword" computerName="SKYNET" duration="00:00:00.0011636" startTime="2010-05-24T18:18:49.5543569-04:00" endTime="2010-05-24T18:18:49.5613573-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a23b7226-f195-4dd1-a852-00d11adc5439" testId="ca92acac-163e-4e33-d2ba-d002704af95a" testName="RegisterPostReturnsViewIfPasswordIsNull" computerName="SKYNET" duration="00:00:00.0005631" startTime="2010-05-24T18:18:49.5653576-04:00" endTime="2010-05-24T18:18:49.5713579-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="beb91f68-04ab-4cb2-90bf-bebf48eaeb5f" testId="5cea7934-393b-e1e2-618f-1997dd69098a" testName="RegisterPostReturnsViewIfPasswordIsTooShort" computerName="SKYNET" duration="00:00:00.0005841" startTime="2010-05-24T18:18:49.5773583-04:00" endTime="2010-05-24T18:18:49.5833586-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="503dc439-18eb-4870-bd5a-b92258986ade" testId="edfd9a58-9ab3-b60a-6a6c-3a2f7153df38" testName="RegisterPostReturnsViewIfRegistrationFails" computerName="SKYNET" duration="00:00:00.0043207" startTime="2010-05-24T18:18:49.5903590-04:00" endTime="2010-05-24T18:18:49.5993595-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="159065e3-4fcc-45d8-af85-43e0d5fc481d" testId="867e847b-45ad-8c3d-cba2-19573cbd72dd" testName="RegisterPostReturnsViewIfUsernameNotSpecified" computerName="SKYNET" duration="00:00:00.0005906" startTime="2010-05-24T18:18:49.6083600-04:00" endTime="2010-05-24T18:18:49.6143604-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a7fcbac8-a275-48e3-aaad-cdd08278e4e3" testId="246cfd1f-1bd7-e31f-df15-896476b32d86" testName="About" computerName="SKYNET" duration="00:00:02.8512078" startTime="2010-05-24T18:18:49.6223608-04:00" endTime="2010-05-24T18:18:52.5645291-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.HomeControllerTest.About threw exception:  System.ArgumentException: La connexion nommée spécifiée est introuvable dans la configuration, n'est pas destinée à être utilisée avec le fournisseur EntityClient ou n'est pas valide..</Message>
+          <StackTrace>    à System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   à System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   à System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   à System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   à MatozDz.Models.MatozDzEntities..ctor() dans c:\users\horus\desktop\matozdz\portablegit-1.6.5.1\matozdz\matozdz\models\matozdzmodel.designer.cs:ligne 38
+   à MatozDz.Models.StoresRepository..ctor() dans C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz\Models\StoresRepository.cs:ligne 11
+   à MatozDz.Controllers.HomeController..ctor() dans C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz\Controllers\HomeController.cs:ligne 12
+   à MatozDz.Tests.Controllers.HomeControllerTest.About() dans C:\Users\Horus\Desktop\MatozDz\PortableGit-1.6.5.1\MatozDz\MatozDz.Tests\Controllers\HomeControllerTest.cs:ligne 33
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

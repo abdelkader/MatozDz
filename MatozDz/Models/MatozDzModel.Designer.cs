@@ -23,7 +23,7 @@
 [assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("MatozDzModel", "FK_Comment_Comment", "Store", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(MatozDz.Models.Store), "Comment", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(MatozDz.Models.Comment))]
 
 // Original file name:
-// Generation date: 2010-05-24 17:57:56
+// Generation date: 2010-05-24 18:56:59
 namespace MatozDz.Models
 {
     
@@ -2987,29 +2987,6 @@ namespace MatozDz.Models
         partial void OnLastDateUpdatedChanging(global::System.Nullable<global::System.DateTime> value);
         partial void OnLastDateUpdatedChanged();
         /// <summary>
-        /// There are no comments for Property UserId in the schema.
-        /// </summary>
-        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
-        [global::System.Runtime.Serialization.DataMemberAttribute()]
-        public global::System.Nullable<global::System.Guid> UserId
-        {
-            get
-            {
-                return this._UserId;
-            }
-            set
-            {
-                this.OnUserIdChanging(value);
-                this.ReportPropertyChanging("UserId");
-                this._UserId = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
-                this.ReportPropertyChanged("UserId");
-                this.OnUserIdChanged();
-            }
-        }
-        private global::System.Nullable<global::System.Guid> _UserId;
-        partial void OnUserIdChanging(global::System.Nullable<global::System.Guid> value);
-        partial void OnUserIdChanged();
-        /// <summary>
         /// There are no comments for Property IsDeleted in the schema.
         /// </summary>
         [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
@@ -3032,6 +3009,52 @@ namespace MatozDz.Models
         private global::System.Nullable<bool> _IsDeleted;
         partial void OnIsDeletedChanging(global::System.Nullable<bool> value);
         partial void OnIsDeletedChanged();
+        /// <summary>
+        /// There are no comments for Property AddedByUser in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string AddedByUser
+        {
+            get
+            {
+                return this._AddedByUser;
+            }
+            set
+            {
+                this.OnAddedByUserChanging(value);
+                this.ReportPropertyChanging("AddedByUser");
+                this._AddedByUser = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("AddedByUser");
+                this.OnAddedByUserChanged();
+            }
+        }
+        private string _AddedByUser;
+        partial void OnAddedByUserChanging(string value);
+        partial void OnAddedByUserChanged();
+        /// <summary>
+        /// There are no comments for Property UpdatedByUser in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string UpdatedByUser
+        {
+            get
+            {
+                return this._UpdatedByUser;
+            }
+            set
+            {
+                this.OnUpdatedByUserChanging(value);
+                this.ReportPropertyChanging("UpdatedByUser");
+                this._UpdatedByUser = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("UpdatedByUser");
+                this.OnUpdatedByUserChanged();
+            }
+        }
+        private string _UpdatedByUser;
+        partial void OnUpdatedByUserChanging(string value);
+        partial void OnUpdatedByUserChanged();
         /// <summary>
         /// There are no comments for Wilaya in the schema.
         /// </summary>

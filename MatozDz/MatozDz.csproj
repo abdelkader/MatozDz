@@ -148,7 +148,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>18775</DevelopmentServerPort>
+          <DevelopmentServerPort>6621</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost/MatozDz</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

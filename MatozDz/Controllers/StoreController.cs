@@ -46,26 +46,29 @@ namespace MatozDz.Controllers
 
         //
         // GET: /Store/Ajout
-
+        [Authorize]
         public ActionResult Ajout()
         {
+
             var wilaya = _repository.GetAllWilayas();
            
             ViewData["Wilayas"] = new SelectList(wilaya, "WilayaId", "name");
             return View();
         }
 
-        [HttpPost]
+        [HttpPost, Authorize]
         public ActionResult Ajout(Store store)
         {
             if (ModelState.IsValid)
             {
                 try
                 {
+                    
                     var wilayaId = Request.Form["WilayaId"];
 
                     //store.AddedBy = "SomeUser";
-                    
+                    store.AddedByUser = User.Identity.Name;
+                    store.UpdatedByUser = User.Identity.Name;
                     _repository.Add(store, wilayaId);
                     _repository.Save();
 
@@ -89,6 +92,7 @@ namespace MatozDz.Controllers
             return View(store);
         }
 
+        [Authorize]
         public ActionResult Edit(int id)
         {
             var wilaya = _repository.GetAllWilayas();
@@ -98,7 +102,7 @@ namespace MatozDz.Controllers
             return View(store);
         }
 
-        [HttpPost]
+        [HttpPost , Authorize]
         public ActionResult Edit(int id, FormCollection formValues)
         {
             try
@@ -107,6 +111,7 @@ namespace MatozDz.Controllers
 
                 var originalStore = _repository.GetStoreById(id);
                 originalStore.LastDateUpdated = DateTime.Now;
+                originalStore.UpdatedByUser = User.Identity.Name;
 
                 UpdateModel(originalStore); 
                 _repository.Save();
@@ -118,7 +123,8 @@ namespace MatozDz.Controllers
                 return View("Index");
             }
         }
-
+        
+        [Authorize]
         public ActionResult Supprimer(int id)
         {
             var store = _repository.GetStoreById(id);
@@ -128,7 +134,7 @@ namespace MatozDz.Controllers
         //
         // POST: /Toto/Delete/5
 
-        [HttpPost]
+        [HttpPost, Authorize]
         public ActionResult Supprimer(int id, Store store)
         {
             try
