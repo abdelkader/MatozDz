@@ -131,6 +131,9 @@
     </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Deploy\MatozDz_DbDeploy.sql" />
+  </ItemGroup>
+  <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
