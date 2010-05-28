@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="MatozDzModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+    <Schema Namespace="MatozDzModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
         <EntityContainer Name="MatozDzModelStoreContainer">
           <EntitySet Name="aspnet_Applications" EntityType="MatozDzModel.Store.aspnet_Applications" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="aspnet_Membership" EntityType="MatozDzModel.Store.aspnet_Membership" store:Type="Tables" Schema="dbo" />
@@ -19,49 +19,48 @@
           <EntitySet Name="aspnet_WebEvent_Events" EntityType="MatozDzModel.Store.aspnet_WebEvent_Events" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Comment" EntityType="MatozDzModel.Store.Comment" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Store" EntityType="MatozDzModel.Store.Store" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="sysdiagrams" EntityType="MatozDzModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Wilaya" EntityType="MatozDzModel.Store.Wilaya" store:Type="Tables" Schema="dbo" />
-          <AssociationSet Name="FK__aspnet_Me__Appli__74AE54BC" Association="MatozDzModel.Store.FK__aspnet_Me__Appli__74AE54BC">
+          <AssociationSet Name="FK__aspnet_Me__Appli__6383C8BA" Association="MatozDzModel.Store.FK__aspnet_Me__Appli__6383C8BA">
             <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
             <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
           </AssociationSet>
-          <AssociationSet Name="FK__aspnet_Me__UserI__75A278F5" Association="MatozDzModel.Store.FK__aspnet_Me__UserI__75A278F5">
+          <AssociationSet Name="FK__aspnet_Me__UserI__6477ECF3" Association="MatozDzModel.Store.FK__aspnet_Me__UserI__6477ECF3">
             <End Role="aspnet_Users" EntitySet="aspnet_Users" />
             <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
           </AssociationSet>
-          <AssociationSet Name="FK__aspnet_Pa__Appli__2DE6D218" Association="MatozDzModel.Store.FK__aspnet_Pa__Appli__2DE6D218">
+          <AssociationSet Name="FK__aspnet_Pa__Appli__5EBF139D" Association="MatozDzModel.Store.FK__aspnet_Pa__Appli__5EBF139D">
             <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
             <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
           </AssociationSet>
-          <AssociationSet Name="FK__aspnet_Pe__PathI__3587F3E0" Association="MatozDzModel.Store.FK__aspnet_Pe__PathI__3587F3E0">
+          <AssociationSet Name="FK__aspnet_Pe__PathI__60A75C0F" Association="MatozDzModel.Store.FK__aspnet_Pe__PathI__60A75C0F">
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+            <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__PathI__656C112C" Association="MatozDzModel.Store.FK__aspnet_Pe__PathI__656C112C">
             <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
             <End Role="aspnet_PersonalizationAllUsers" EntitySet="aspnet_PersonalizationAllUsers" />
           </AssociationSet>
-          <AssociationSet Name="FK__aspnet_Pe__PathI__3B40CD36" Association="MatozDzModel.Store.FK__aspnet_Pe__PathI__3B40CD36">
-            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
-            <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
-          </AssociationSet>
-          <AssociationSet Name="FK__aspnet_Pe__UserI__3C34F16F" Association="MatozDzModel.Store.FK__aspnet_Pe__UserI__3C34F16F">
+          <AssociationSet Name="FK__aspnet_Pe__UserI__619B8048" Association="MatozDzModel.Store.FK__aspnet_Pe__UserI__619B8048">
             <End Role="aspnet_Users" EntitySet="aspnet_Users" />
             <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
           </AssociationSet>
-          <AssociationSet Name="FK__aspnet_Pr__UserI__0B91BA14" Association="MatozDzModel.Store.FK__aspnet_Pr__UserI__0B91BA14">
+          <AssociationSet Name="FK__aspnet_Pr__UserI__628FA481" Association="MatozDzModel.Store.FK__aspnet_Pr__UserI__628FA481">
             <End Role="aspnet_Users" EntitySet="aspnet_Users" />
             <End Role="aspnet_Profile" EntitySet="aspnet_Profile" />
           </AssociationSet>
-          <AssociationSet Name="FK__aspnet_Ro__Appli__17036CC0" Association="MatozDzModel.Store.FK__aspnet_Ro__Appli__17036CC0">
+          <AssociationSet Name="FK__aspnet_Ro__Appli__5FB337D6" Association="MatozDzModel.Store.FK__aspnet_Ro__Appli__5FB337D6">
             <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
             <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
           </AssociationSet>
-          <AssociationSet Name="FK__aspnet_Us__Appli__60A75C0F" Association="MatozDzModel.Store.FK__aspnet_Us__Appli__60A75C0F">
+          <AssociationSet Name="FK__aspnet_Us__Appli__5DCAEF64" Association="MatozDzModel.Store.FK__aspnet_Us__Appli__5DCAEF64">
             <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
             <End Role="aspnet_Users" EntitySet="aspnet_Users" />
           </AssociationSet>
-          <AssociationSet Name="FK__aspnet_Us__RoleI__1DB06A4F" Association="MatozDzModel.Store.FK__aspnet_Us__RoleI__1DB06A4F">
+          <AssociationSet Name="FK__aspnet_Us__RoleI__66603565" Association="MatozDzModel.Store.FK__aspnet_Us__RoleI__66603565">
             <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
             <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
           </AssociationSet>
-          <AssociationSet Name="FK__aspnet_Us__UserI__1CBC4616" Association="MatozDzModel.Store.FK__aspnet_Us__UserI__1CBC4616">
+          <AssociationSet Name="FK__aspnet_Us__UserI__6754599E" Association="MatozDzModel.Store.FK__aspnet_Us__UserI__6754599E">
             <End Role="aspnet_Users" EntitySet="aspnet_Users" />
             <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
           </AssociationSet>
@@ -212,8 +211,8 @@
           <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="Text" Type="nvarchar" Nullable="false" MaxLength="250" />
           <Property Name="UserPosted" Type="nvarchar" Nullable="false" MaxLength="50" />
-          <Property Name="DatePosted" Type="date" Nullable="false" />
           <Property Name="StoreId" Type="int" Nullable="false" />
+          <Property Name="DatePosted" Type="datetime" />
         </EntityType>
         <EntityType Name="Store">
           <Key>
@@ -226,21 +225,11 @@
           <Property Name="url" Type="varchar" MaxLength="50" />
           <Property Name="email" Type="varchar" MaxLength="50" />
           <Property Name="WilayaId" Type="int" Nullable="false" />
-          <Property Name="DateAdded" Type="date" />
-          <Property Name="LastDateUpdated" Type="date" />
           <Property Name="IsDeleted" Type="bit" />
           <Property Name="AddedByUser" Type="varchar" MaxLength="50" />
           <Property Name="UpdatedByUser" Type="varchar" MaxLength="50" />
-        </EntityType>
-        <EntityType Name="sysdiagrams">
-          <Key>
-            <PropertyRef Name="diagram_id" />
-          </Key>
-          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
-          <Property Name="principal_id" Type="int" Nullable="false" />
-          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="version" Type="int" />
-          <Property Name="definition" Type="varbinary(max)" />
+          <Property Name="LastDateUpdated" Type="datetime" />
+          <Property Name="DateAdded" Type="datetime" />
         </EntityType>
         <EntityType Name="Wilaya">
           <Key>
@@ -249,7 +238,7 @@
           <Property Name="WilayaId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="name" Type="varchar" Nullable="false" MaxLength="30" />
         </EntityType>
-        <Association Name="FK__aspnet_Me__Appli__74AE54BC">
+        <Association Name="FK__aspnet_Me__Appli__6383C8BA">
           <End Role="aspnet_Applications" Type="MatozDzModel.Store.aspnet_Applications" Multiplicity="1" />
           <End Role="aspnet_Membership" Type="MatozDzModel.Store.aspnet_Membership" Multiplicity="*" />
           <ReferentialConstraint>
@@ -261,7 +250,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__aspnet_Me__UserI__75A278F5">
+        <Association Name="FK__aspnet_Me__UserI__6477ECF3">
           <End Role="aspnet_Users" Type="MatozDzModel.Store.aspnet_Users" Multiplicity="1" />
           <End Role="aspnet_Membership" Type="MatozDzModel.Store.aspnet_Membership" Multiplicity="0..1" />
           <ReferentialConstraint>
@@ -273,7 +262,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__aspnet_Pa__Appli__2DE6D218">
+        <Association Name="FK__aspnet_Pa__Appli__5EBF139D">
           <End Role="aspnet_Applications" Type="MatozDzModel.Store.aspnet_Applications" Multiplicity="1" />
           <End Role="aspnet_Paths" Type="MatozDzModel.Store.aspnet_Paths" Multiplicity="*" />
           <ReferentialConstraint>
@@ -285,19 +274,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__aspnet_Pe__PathI__3587F3E0">
-          <End Role="aspnet_Paths" Type="MatozDzModel.Store.aspnet_Paths" Multiplicity="1" />
-          <End Role="aspnet_PersonalizationAllUsers" Type="MatozDzModel.Store.aspnet_PersonalizationAllUsers" Multiplicity="0..1" />
-          <ReferentialConstraint>
-            <Principal Role="aspnet_Paths">
-              <PropertyRef Name="PathId" />
-            </Principal>
-            <Dependent Role="aspnet_PersonalizationAllUsers">
-              <PropertyRef Name="PathId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__aspnet_Pe__PathI__3B40CD36">
+        <Association Name="FK__aspnet_Pe__PathI__60A75C0F">
           <End Role="aspnet_Paths" Type="MatozDzModel.Store.aspnet_Paths" Multiplicity="0..1" />
           <End Role="aspnet_PersonalizationPerUser" Type="MatozDzModel.Store.aspnet_PersonalizationPerUser" Multiplicity="*" />
           <ReferentialConstraint>
@@ -309,7 +286,19 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__aspnet_Pe__UserI__3C34F16F">
+        <Association Name="FK__aspnet_Pe__PathI__656C112C">
+          <End Role="aspnet_Paths" Type="MatozDzModel.Store.aspnet_Paths" Multiplicity="1" />
+          <End Role="aspnet_PersonalizationAllUsers" Type="MatozDzModel.Store.aspnet_PersonalizationAllUsers" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Paths">
+              <PropertyRef Name="PathId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationAllUsers">
+              <PropertyRef Name="PathId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__UserI__619B8048">
           <End Role="aspnet_Users" Type="MatozDzModel.Store.aspnet_Users" Multiplicity="0..1" />
           <End Role="aspnet_PersonalizationPerUser" Type="MatozDzModel.Store.aspnet_PersonalizationPerUser" Multiplicity="*" />
           <ReferentialConstraint>
@@ -321,7 +310,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__aspnet_Pr__UserI__0B91BA14">
+        <Association Name="FK__aspnet_Pr__UserI__628FA481">
           <End Role="aspnet_Users" Type="MatozDzModel.Store.aspnet_Users" Multiplicity="1" />
           <End Role="aspnet_Profile" Type="MatozDzModel.Store.aspnet_Profile" Multiplicity="0..1" />
           <ReferentialConstraint>
@@ -333,7 +322,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__aspnet_Ro__Appli__17036CC0">
+        <Association Name="FK__aspnet_Ro__Appli__5FB337D6">
           <End Role="aspnet_Applications" Type="MatozDzModel.Store.aspnet_Applications" Multiplicity="1" />
           <End Role="aspnet_Roles" Type="MatozDzModel.Store.aspnet_Roles" Multiplicity="*" />
           <ReferentialConstraint>
@@ -345,7 +334,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__aspnet_Us__Appli__60A75C0F">
+        <Association Name="FK__aspnet_Us__Appli__5DCAEF64">
           <End Role="aspnet_Applications" Type="MatozDzModel.Store.aspnet_Applications" Multiplicity="1" />
           <End Role="aspnet_Users" Type="MatozDzModel.Store.aspnet_Users" Multiplicity="*" />
           <ReferentialConstraint>
@@ -357,7 +346,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__aspnet_Us__RoleI__1DB06A4F">
+        <Association Name="FK__aspnet_Us__RoleI__66603565">
           <End Role="aspnet_Roles" Type="MatozDzModel.Store.aspnet_Roles" Multiplicity="1" />
           <End Role="aspnet_UsersInRoles" Type="MatozDzModel.Store.aspnet_UsersInRoles" Multiplicity="*" />
           <ReferentialConstraint>
@@ -369,7 +358,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__aspnet_Us__UserI__1CBC4616">
+        <Association Name="FK__aspnet_Us__UserI__6754599E">
           <End Role="aspnet_Users" Type="MatozDzModel.Store.aspnet_Users" Multiplicity="1" />
           <End Role="aspnet_UsersInRoles" Type="MatozDzModel.Store.aspnet_UsersInRoles" Multiplicity="*" />
           <ReferentialConstraint>

@@ -27,7 +27,7 @@
             <td>
                 <%= Html.ActionLink("Edit", "Edit", new { id=item.StoreId }) %> |
                 <%= Html.ActionLink("Detail", "Detail", new { id=item.StoreId })%> |
-                <%= Html.ActionLink("Delete", "Delete", new { id=item.StoreId })%>
+                <%= Html.ActionLink("Supprimer", "Supprimer", new { id=item.StoreId })%>
             </td>
             
             <td>

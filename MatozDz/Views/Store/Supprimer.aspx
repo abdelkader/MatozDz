@@ -26,7 +26,7 @@
         <div class="display-field"><%= Html.Encode(String.Format("{0:g}", Model.LastDateUpdated)) %></div>
         
         <div class="display-label">Ajouté par l'User</div>
-        <div class="display-field"><%= Html.Encode(Model.UserId) %></div>
+        <div class="display-field"><%= Html.Encode(Model.AddedByUser) %></div>
         
     </fieldset>
     <% using (Html.BeginForm()) { %>
