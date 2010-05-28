@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Web.Mvc;
 using MatozDz.Models;
+using Webdiyer.WebControls.Mvc;
 
 namespace MatozDz.Controllers
 {
@@ -24,25 +25,41 @@ namespace MatozDz.Controllers
             return View(stores);
         }
 
+
+        //TODO:  Pagination...
         public ActionResult Wilaya(string id)
         {
-            IQueryable<Store> stores;
+            
 
             if (string.IsNullOrEmpty(id))
-                //TODO:  Pagination...
-                stores = _repository.GetStores();
+            {
+                PagedList<Store> stores = _repository.GetStores().OrderBy(p=>p.StoreId).ToPagedList(1,20);
+
+                return View(stores);
+            }
+            
+            // Is URL containing Wilaya by Id or String ?
+            int wilayaId;
+            bool Parsed = int.TryParse(id, out wilayaId);
+
+
+            if (Parsed)
+            {
+                PagedList<Store> stores = _repository.GetStores().OrderBy(p => p.StoreId).ToPagedList(1, 20);
+                return View(stores);
+              
+            }
             else
             {
-                // Is URL containing Wilaya by Id or String ?
-                int wilayaId;
-                stores = int.TryParse(id, out wilayaId) ? 
-                    _repository.GetStoresByWilayaId(wilayaId) :
-                    _repository.GetStoresByWilaya(id);
+                var stores = _repository.GetStoresByWilayaId(wilayaId);
+                return View(stores);      
+                
             }
-
-            return View(stores);
+            
             
         }
+
+      
 
         //
         // GET: /Store/Ajout
