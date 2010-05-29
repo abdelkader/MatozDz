@@ -5,6 +5,7 @@ namespace MatozDz.Models
     public class StoresRepository : IStoresRepository
     {
         private readonly MatozDzEntities _db;
+        private const int nb_store_display = 5;
 
         public StoresRepository()
         {
@@ -17,10 +18,12 @@ namespace MatozDz.Models
             return stores;
         }
 
-        public IQueryable<Store> GetLastAddedStores(int nbStoresTodDisplay)
+        public IQueryable<Store> GetLastAddedStores(int? nbStoresTodDisplay)
         {
-            //todo verify nbStoresTodDisplay less than zero...
-            var stores = _db.Store.Take(nbStoresTodDisplay).Where(p => p.IsDeleted != true);
+
+            var stores = _db.Store.Where(p => p.IsDeleted != true)
+                                   .OrderByDescending(p => p.DateAdded)
+                                   .Take(nbStoresTodDisplay?? nb_store_display);
             return stores;
         }
 

@@ -399,3 +399,15 @@ input[type="password"]
     margin-bottom:20px;
 
 }
+/* Paging Style */
+/*pager style*/
+
+.pages { color:red;font-weight:bold; font-size:11px;}
+.pages  .item{padding: 1px 6px;font-size: 13px;} /*numeric pager items*/
+.pages .cpb {color:red;padding: 1px 6px;font-size: 13px;} /*current pager item*/
+.pages a { text-decoration:none;padding: 0 5px; border: 1px solid #ddd;
+           margin:0 2px; color:#000;font-weight:normal;}
+
+.pages a:hover { background-color: #E61636; color:#fff;
+                 border:1px solid #E61636; text-decoration:none;font-weight:normal;}
+

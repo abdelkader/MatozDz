@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<PagedList<MatozDz.Models.Store>>" %>
-<%--<%@ Import Namespace="Webdiyer.WebControls.Models"%>--%>
+
 <%@ Import Namespace="Webdiyer.WebControls.Mvc"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
@@ -48,6 +48,10 @@
     <p>
         <%= Html.ActionLink("Ajouter un magasin", "Ajout") %>
     </p>
- <%= Html.Pager(Model,new PagerOptions{PageIndexParameterName="id"}) %>
+ <%--<%= Html.Pager(Model,new PagerOptions{PageIndexParameterName="id"}) %>--%>
+  <%=Html.Pager(Model, new PagerOptions { PageIndexParameterName = "id", 
+    CurrentPagerItemWrapperFormatString = "<span class=\"cpb\">{0}</span>", 
+    NumericPagerItemWrapperFormatString = "<span class=\"item\">{0}</span>", 
+    CssClass = "pages", SeparatorHtml = "" })%>
 </asp:Content>
 

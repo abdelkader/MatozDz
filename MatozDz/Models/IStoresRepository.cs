@@ -7,7 +7,7 @@ namespace MatozDz.Models
     public interface IStoresRepository
     {
         IQueryable<Store> GetStores();
-        IQueryable<Store> GetLastAddedStores(int nbStoresTodDisplay);
+        IQueryable<Store> GetLastAddedStores(int? nbStoresTodDisplay);
         IQueryable<Store> GetStoresByWilaya(string wilaya);
         IQueryable<Wilaya> GetAllWilayas();
         void Save();

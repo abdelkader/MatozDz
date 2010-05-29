@@ -37,7 +37,7 @@
         <div class="display-field"><%= Html.Encode(String.Format("{0:g}", Model.LastDateUpdated)) %></div>
         
         <div class="display-label">UserId</div>
-        <div class="display-field"><%= Html.Encode(Model.UserId) %></div>
+        <div class="display-field"><%= Html.Encode(Model.UpdatedByUser) %></div>
         
     </fieldset>
     <p>
