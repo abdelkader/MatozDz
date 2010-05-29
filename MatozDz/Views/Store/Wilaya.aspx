@@ -1,6 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<PagedList<MatozDz.Models.Store>>" %>
-<%--<%@ Import Namespace="Webdiyer.WebControls.Models"%>--%>
-<%@ Import Namespace="Webdiyer.WebControls.Mvc"%>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<MatozDz.Models.Store>>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
 	Wilaya
@@ -48,6 +46,6 @@
     <p>
         <%= Html.ActionLink("Ajouter un magasin", "Ajout") %>
     </p>
- <%= Html.Pager(Model,new PagerOptions{PageIndexParameterName="id"}) %>
+
 </asp:Content>
 
