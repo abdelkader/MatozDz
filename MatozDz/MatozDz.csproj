@@ -91,9 +91,11 @@
   <ItemGroup>
     <Content Include="Content\img\buttonbg.png" />
     <Content Include="Content\img\Logo.gif" />
+    <Content Include="Content\jquery.autocomplete.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Lib\MvcPager.dll" />
+    <Content Include="Scripts\jquery-1.4.2.js" />
     <Content Include="Scripts\jquery.autocomplete.js" />
     <Content Include="Views\Magasins\Ajout.aspx" />
     <Content Include="Views\Magasins\Detail.aspx" />

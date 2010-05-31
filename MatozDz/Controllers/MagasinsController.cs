@@ -21,7 +21,7 @@ namespace MatozDz.Controllers
 
         }
         #endregion Constructor
-      
+
         public ActionResult Index(int? id)
         {
             PagedList<Store> stores = _repository.GetStores().OrderBy(p => p.StoreId).ToPagedList(id ?? 1, 20);
@@ -33,7 +33,7 @@ namespace MatozDz.Controllers
             return View(stores);
         }
 
-
+        [OutputCache(Duration = 10, VaryByParam = "none")]
         public ActionResult WilayaList()
         {
             var listWilaya = new string[48];

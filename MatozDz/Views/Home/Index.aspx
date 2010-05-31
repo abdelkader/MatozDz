@@ -10,10 +10,10 @@
 		<% using (Html.BeginForm("wilaya", "Magasins", FormMethod.Post, new { id = "searchform" })) %>
 		<% { %>
 
-            Wilaya : <%= Html.TextBox("id","", new { @class = "box" }) %>
+            Wilaya : <%= Html.TextBox("id", "", new { @class = "box", @autocomplete = "off" })%>
             <button class="btn" title="Submit Search">Chercher...</button>
         <% } %>
-
+  
         </div>
         <div id="content">
             

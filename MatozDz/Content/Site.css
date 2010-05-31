@@ -398,7 +398,7 @@ input[type="password"]
     margin-bottom:20px;
 
 }
-/*TextBox autocomplete..*/
+/*TextBox autocomplete..
 .ac_results { 
   background-color:#b0c4de;
 } 
@@ -419,7 +419,7 @@ input[type="password"]
 
 .ac_results ul li.ac_over { 
   background-color: #acf; 
-} 
+} */
 /* Paging Style */
 .pages { color:red;font-weight:bold; font-size:11px;}
 .pages  .item{padding: 1px 6px;font-size: 13px;} /*numeric pager items*/
