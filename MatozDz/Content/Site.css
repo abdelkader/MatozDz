@@ -263,8 +263,7 @@ html[xmlns] .clearfix {
 	font-weight: bold;
 	font-family: "Lucida Grande",Verdana,sans-serif;
 	height: 35px;
-
-	padding-left: 30px;
+	padding-left: 10px;
 	padding-top:6px;
 	width: 300px;
 	font-size: 1em;
@@ -355,7 +354,7 @@ fieldset
 	margin-right:auto;
     padding: 1em;
     border: 1px solid #CCC;
-	width:500px;
+	width:650px;
 }
 
 fieldset p 
@@ -399,9 +398,29 @@ input[type="password"]
     margin-bottom:20px;
 
 }
-/* Paging Style */
-/*pager style*/
+/*TextBox autocomplete..*/
+.ac_results { 
+  background-color:#b0c4de;
+} 
+.ac_results ul { 
+  margin:0; 
+  padding:0; 
+  list-style-type:none; 
+  border: solid 1px #ccc; 
+} 
 
+.ac_results ul li { 
+  font-family: Arial, Verdana, Sans-Serif; 
+  font-size: 12px; 
+  margin: 1px; 
+  padding: 3px; 
+  cursor: pointer; 
+} 
+
+.ac_results ul li.ac_over { 
+  background-color: #acf; 
+} 
+/* Paging Style */
 .pages { color:red;font-weight:bold; font-size:11px;}
 .pages  .item{padding: 1px 6px;font-size: 13px;} /*numeric pager items*/
 .pages .cpb {color:red;padding: 1px 6px;font-size: 13px;} /*current pager item*/
@@ -410,4 +429,5 @@ input[type="password"]
 
 .pages a:hover { background-color: #E61636; color:#fff;
                  border:1px solid #E61636; text-decoration:none;font-weight:normal;}
+
 

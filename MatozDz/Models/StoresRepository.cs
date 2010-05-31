@@ -1,11 +1,12 @@
 using System.Linq;
+using MatozDz.ViewModel;
 
 namespace MatozDz.Models
 {
     public class StoresRepository : IStoresRepository
     {
         private readonly MatozDzEntities _db;
-        private const int nb_store_display = 5;
+        private const int NbStoreDisplay = 5;
 
         public StoresRepository()
         {
@@ -23,7 +24,7 @@ namespace MatozDz.Models
 
             var stores = _db.Store.Where(p => p.IsDeleted != true)
                                    .OrderByDescending(p => p.DateAdded)
-                                   .Take(nbStoresTodDisplay?? nb_store_display);
+                                   .Take(nbStoresTodDisplay?? NbStoreDisplay);
             return stores;
         }
 
@@ -61,18 +62,23 @@ namespace MatozDz.Models
             return stores;
         }
 
-        public Store GetStoreById(int id)
+        public StoreDetail GetStoreById(int id)
         {
-            var store = _db.Store.Include("Wilaya").Where(p => p.StoreId == id &&
+            var store = _db.Store.Include("Wilaya").Include("Comment").Where(p => p.StoreId == id &&
                                                 p.IsDeleted != true).FirstOrDefault();
-            return store;
+
+
+
+
+
+            return new StoreDetail() { Store = store};
         }
 
         
         public void MarkStoreAsDeleted(int id)
         {
             var originalStore = GetStoreById(id);
-            originalStore.IsDeleted = true;
+            originalStore.Store.IsDeleted = true;
         }
     }
 }

@@ -34,12 +34,29 @@ namespace MatozDz.Controllers
         }
 
 
+        public ActionResult WilayaList()
+        {
+            var listWilaya = new string[48];
+
+            var wilayas = _repository.GetAllWilayas().ToList();
+            for (int i = 0; i < wilayas.Count(); i++)
+            {
+                listWilaya[i] = wilayas[i].name;
+            }
+            
+            
+            //return raw text, one result on each line
+            return Content(string.Join("\n", listWilaya));
+        }
+
         public ActionResult Wilaya(string id)
         {
             // URL: /Wilaya
             if (string.IsNullOrEmpty(id))
             {
                 PagedList<Store> stores = _repository.GetStores().OrderBy(p=>p.StoreId).ToPagedList(1,20);
+                if (Request.IsAjaxRequest())
+                    return PartialView("StoresPV", stores);
                 return View(stores);
             }
             
@@ -52,6 +69,8 @@ namespace MatozDz.Controllers
             if (Parsed)
             {
                 PagedList<Store> stores = _repository.GetStores().OrderBy(p => p.StoreId).ToPagedList(wilayaId, 20);
+                if (Request.IsAjaxRequest())
+                    return PartialView("StoresPV", stores);
                 return View(stores);
               
             }
@@ -59,7 +78,9 @@ namespace MatozDz.Controllers
             // URL: /Wilaya/Adrar
             else
             {
-                var stores = _repository.GetStoresByWilaya(id);
+                PagedList<Store> stores = _repository.GetStoresByWilaya(id).OrderBy(p => p.StoreId).ToPagedList(1, 20);
+                if (Request.IsAjaxRequest())
+                    return PartialView("StoresPV", stores);
                 return View(stores);      
                 
             }
@@ -91,7 +112,6 @@ namespace MatozDz.Controllers
                     
                     var wilayaId = Request.Form["WilayaId"];
 
-                    
                     store.AddedByUser = User.Identity.Name;
                     store.UpdatedByUser = User.Identity.Name;
                     store.DateAdded = _date.GetDate();
@@ -136,12 +156,11 @@ namespace MatozDz.Controllers
         {
             try
             {
-                //store.AddedBy = "SomeUser";
 
                 var originalStore = _repository.GetStoreById(id);
    
-                originalStore.LastDateUpdated = _date.GetDate();
-                originalStore.UpdatedByUser = User.Identity.Name;
+                originalStore.Store.LastDateUpdated = _date.GetDate();
+                originalStore.Store.UpdatedByUser = User.Identity.Name;
 
                 UpdateModel(originalStore); 
                 _repository.Save();
@@ -179,6 +198,51 @@ namespace MatozDz.Controllers
             {
                 return View();
             }
+        }
+
+        //todo add comment
+        public ActionResult AjoutCommentaire()
+        {
+
+          
+
+            //var wilaya = _repository.GetAllWilayas();
+
+            //ViewData["Wilayas"] = new SelectList(wilaya, "WilayaId", "name");
+            return View();
+        }
+
+        //todo add comment
+        [HttpPost]
+        public ActionResult AjoutCommentaire(Store store)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+
+                    var wilayaId = Request.Form["WilayaId"];
+
+                    store.AddedByUser = User.Identity.Name;
+                    store.UpdatedByUser = User.Identity.Name;
+                    store.DateAdded = _date.GetDate();
+                    store.LastDateUpdated = _date.GetDate();
+
+
+                    _repository.Add(store, wilayaId);
+                    _repository.Save();
+
+                    return RedirectToAction("Wilaya", new { id = wilayaId });
+                }
+                // Todo Add exception handling.
+                catch (Exception e)
+                {
+                    ;
+                    // ModelState.AddRuleViolations(dinner.GetRuleViolations());
+                }
+            }
+
+            return RedirectToAction("Ajout");
         }
     }
 }
