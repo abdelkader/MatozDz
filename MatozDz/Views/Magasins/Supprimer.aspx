@@ -32,7 +32,7 @@
     <% using (Html.BeginForm()) { %>
         <p>
 		    <input type="submit" value="Delete" /> |
-		    <%= Html.ActionLink("Back to List", "Store") %>
+		    <%= Html.ActionLink("Back to List", "Magasins") %>
         </p>
     <% } %>
 
