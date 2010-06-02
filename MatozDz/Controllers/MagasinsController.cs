@@ -4,6 +4,7 @@ using System.Web.Mvc;
 using MatozDz.Helpers;
 using MatozDz.Models;
 using Webdiyer.WebControls.Mvc;
+using MatozDz.ViewModel;
 
 namespace MatozDz.Controllers
 {
@@ -33,18 +34,27 @@ namespace MatozDz.Controllers
             return View(stores);
         }
 
-        [OutputCache(Duration = 10, VaryByParam = "none")]
+        //[OutputCache(Duration = 10, VaryByParam = "none")]
         public ActionResult WilayaList()
         {
-            var listWilaya = new string[48];
-
             var wilayas = _repository.GetAllWilayas().ToList();
+            var listWilaya = new string[wilayas.Count()];
+            
             for (int i = 0; i < wilayas.Count(); i++)
             {
                 listWilaya[i] = wilayas[i].name;
             }
             
             
+            // public ContentResult Territories(string q, int limit, Int64 timestamp)
+            //{
+            //  StringBuilder responseContentBuilder = new StringBuilder();
+            //  IQueryable<Territory> territories = _repository.GetTerritories(q, limit);
+            //  foreach (Territory territory in territories)
+            //    responseContentBuilder.Append(String.Format("{0}|{1}\n", territory.TerritoryID, territory.TerritoryDescription));
+
+            //  return Content(responseContentBuilder.ToString());
+            //}
             //return raw text, one result on each line
             return Content(string.Join("\n", listWilaya));
         }
@@ -200,39 +210,23 @@ namespace MatozDz.Controllers
             }
         }
 
-        //todo add comment
-        public ActionResult AjoutCommentaire()
-        {
-
-          
-
-            //var wilaya = _repository.GetAllWilayas();
-
-            //ViewData["Wilayas"] = new SelectList(wilaya, "WilayaId", "name");
-            return View();
-        }
-
+       
         //todo add comment
         [HttpPost]
-        public ActionResult AjoutCommentaire(Store store)
+        public ActionResult AjoutCommentaire(Comment comment, int storeId)
         {
             if (ModelState.IsValid)
             {
                 try
                 {
-
-                    var wilayaId = Request.Form["WilayaId"];
-
-                    store.AddedByUser = User.Identity.Name;
-                    store.UpdatedByUser = User.Identity.Name;
-                    store.DateAdded = _date.GetDate();
-                    store.LastDateUpdated = _date.GetDate();
+                    comment.UserPosted = User.Identity.Name;
+                    comment.DatePosted = _date.GetDate();
 
 
-                    _repository.Add(store, wilayaId);
+                    _repository.AddComment(comment, storeId);
                     _repository.Save();
 
-                    return RedirectToAction("Wilaya", new { id = wilayaId });
+                    return RedirectToAction("Detail", new { id = storeId });
                 }
                 // Todo Add exception handling.
                 catch (Exception e)
@@ -242,7 +236,17 @@ namespace MatozDz.Controllers
                 }
             }
 
-            return RedirectToAction("Ajout");
+            return RedirectToAction("Detail", new { id = storeId });
+        }
+
+        //todo add comment
+        public ActionResult SupprimerCommentaire(int commentId, int storeId)
+        {
+
+            _repository.DeleteComment(commentId);
+            _repository.Save();
+
+            return RedirectToAction("Detail", new { id = storeId });
         }
     }
 }

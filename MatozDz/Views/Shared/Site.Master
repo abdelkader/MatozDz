@@ -11,9 +11,9 @@
     <link href="<%= Url.Content("~/Content/jquery.autocomplete.css") %>" rel="stylesheet" type="text/css" />
     <script language="javascript" type="text/javascript" src="<%=Url.Content("~/Scripts/jquery.autocomplete.js") %>"></script>
     
-    <script language="javascript">
+    <script language="javascript" type="text/javascript">
         $(document).ready(function() {
-            $("input#id").autocomplete('<%= Url.Action("WilayaList", "Magasins") %>');
+        $("#subheader input#id").autocomplete('<%= Url.Action("WilayaList", "Magasins") %>');
         }); 
     </script>
   

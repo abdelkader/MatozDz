@@ -6,5 +6,6 @@ namespace MatozDz.ViewModel
     {
         public Store Store { get; set; }
         public Comment Comment { get; set; }
+        
     }
 }

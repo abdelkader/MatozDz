@@ -80,5 +80,27 @@ namespace MatozDz.Models
             var originalStore = GetStoreById(id);
             originalStore.Store.IsDeleted = true;
         }
+
+
+
+
+        public void AddComment(Comment comment, int storeId)
+        {
+            var originalStore = GetStoreById(storeId);
+            comment.Store = originalStore.Store;
+            
+            _db.AddToComment(comment);
+        }
+
+
+        public void DeleteComment(int commentId)
+        {
+            var comment = _db.Comment. Where(p => p.Id == commentId ).FirstOrDefault();
+            if (comment != null)
+                _db.DeleteObject(comment);
+
+        }
+
+        
     }
 }

@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<MatozDz.ViewModel.StoreDetail>" %>
+<%@ Import Namespace="MatozDz.Helpers" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
     Detail du magasin :  <%= Html.Encode(Model.Store.name) %>
@@ -49,8 +50,20 @@
            <% foreach (var item in Model.Store.Comment) { %>
            <tr>
                 <td>
-                    <%= Html.ActionLink("Edit", "Edit", new { id=item.Id  }) %> |
-                    <%= Html.ActionLink("Supprimer", "Supprimer", new { id=item.Id })%>
+                
+              
+                <% if ( User.Identity.IsAuthenticated &&
+                        (User.IsInRole("Admin") || User.IsInRole("Modo") || item.UserPosted == User.Identity.Name)
+                       )
+                   { %>
+                    <%= Html.ActionLinkWithImage("/Content/img/edit.png", "EditCommentaire", new { commentId = item.Id, storeId = Model.Store.StoreId })%>
+                    
+                    <%= Html.ActionLinkWithImage("/Content/img/Trash.png", "SupprimerCommentaire", new { commentId = item.Id, storeId = Model.Store.StoreId })%>
+                    <%--<%= Html.ActionLink("Edit", "EditCommentaire", new { commentId = item.Id, storeId = Model.Store.StoreId })%> |--%>
+                    
+                    <%--<%= Html.ActionLink("Supprimer", "SupprimerCommentaire", new { commentId = item.Id, storeId = Model.Store.StoreId })%>--%>
+                <% } %>
+       
                 </td>
                
                 <td>
@@ -65,34 +78,43 @@
             </tr>
         
         <% } %>
-  </table>
+      </table>
        
        
        <br/><br/>
         <%--Ajout de commentaire--%>
-        <% using (Html.BeginForm("AjoutCommentaire", "Magasins")) {%>
-        
-        <div class="editor-label">
-            <%= Html.LabelFor(model => model.Comment.Text) %>
-        </div>
-        <div class="editor-field">
-            <%= Html.TextBoxFor(model => model.Comment.Text) %>
-            <%= Html.ValidationMessageFor(model => model.Comment.Text)%>
-        </div>
-        
-        <p>
-            <input type="submit" value="Ajouter" />
-        </p>
-        <% } %>
+        <% if (   User.Identity.IsAuthenticated && 
+                  ( User.IsInRole("Admin") || User.IsInRole("Modo") || Model.Comment.UserPosted == User.Identity.Name ) 
+              )
+         { %>
+
+                <% using (Html.BeginForm("AjoutCommentaire", "Magasins")) {%>
+                
+                <div class="editor-label">
+                    <%= Html.LabelFor(model => model.Comment.Text) %>
+                </div>
+                <div class="editor-field">
+                    <%= Html.Hidden("storeId", Model.Store.StoreId)%>
+                    <%= Html.TextAreaFor(model => model.Comment.Text, new { rows = 5, cols = 70 })%>
+                    <%= Html.ValidationMessageFor(model => model.Comment.Text)%>
+                </div>
+                
+                <p>
+                    <input type="submit" value="Ajouter" />
+                </p>
+                <% } %>
+        <% } %>     
+       
         <%--Ajout de commentaire--%>
         <br/>
   
     </fieldset>
     <p>
+        
         <%= Html.ActionLink("Edit", "Edit", new { id=Model.Store.StoreId }) %> |
         <%= Html.ActionLink("Supprimer", "Supprimer", new { id = Model.Store.StoreId })%> |
         <%= Html.ActionLink("Back to List", "Wilaya") %>
     </p>
-        </table>
+        
 
 </asp:Content>
