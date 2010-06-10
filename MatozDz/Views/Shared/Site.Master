@@ -2,21 +2,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
+   
+    
     <title>
         <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
     </title>
     
     <script language="javascript" type="text/javascript" src="<%=Url.Content("~/Scripts/jquery-1.4.2.js") %>"></script>
     <link href="<%= Url.Content("~/Content/Site.css") %>" rel="stylesheet" type="text/css" />
-    <link href="<%= Url.Content("~/Content/jquery.autocomplete.css") %>" rel="stylesheet" type="text/css" />
-    <script language="javascript" type="text/javascript" src="<%=Url.Content("~/Scripts/jquery.autocomplete.js") %>"></script>
     
-    <script language="javascript" type="text/javascript">
-        $(document).ready(function() {
-        $("#subheader input#id").autocomplete('<%= Url.Action("WilayaList", "Magasins") %>');
-        }); 
-    </script>
-  
+    
+    
+ 
+    
+    <asp:ContentPlaceHolder ID="HeaderContent" runat="server" />
  
 
 </head>

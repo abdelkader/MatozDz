@@ -1,5 +1,6 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<PagedList<MatozDz.Models.Store>>" %>
 <%@ Import Namespace="Webdiyer.WebControls.Mvc"%>
+<%@ Import Namespace="MatozDz.Helpers" %>
 
 <div id="dvStores">
     <h2>Liste des Magasins </h2>
@@ -16,9 +17,9 @@
     <% foreach (var item in Model) { %>
        <tr>
             <td>
-                <%= Html.ActionLink("Edit", "Edit", new { id=item.StoreId }) %> |
-                <%= Html.ActionLink("Detail", "Detail", new { id=item.StoreId })%> |
-                <%= Html.ActionLink("Supprimer", "Supprimer", new { id=item.StoreId })%>
+                <%= Html.ActionLinkWithImage(Url.Content("~/Content/img/edit.png"), "Edit", new { id = item.StoreId })%>|
+                <%= Html.ActionLinkWithImage(Url.Content("~/Content/img/Detail.png"), "Detail", new { id = item.StoreId })%>|
+                <%= Html.ActionLinkWithImage(Url.Content("~/Content/img/supprimer.png"), "Supprimer", new { id = item.StoreId })%>
             </td>
            
             <td>

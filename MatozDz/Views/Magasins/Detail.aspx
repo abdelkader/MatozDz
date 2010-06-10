@@ -5,7 +5,11 @@
     Detail du magasin :  <%= Html.Encode(Model.Store.name) %>
 </asp:Content>
 
+<asp:Content ID="Content3" ContentPlaceHolderID="HeaderContent" runat="server">
 
+<script language="javascript" type="text/javascript" src="<%=Url.Content("~/Scripts/wmd/wmd.js") %>"></script>
+
+</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     
     <fieldset>
@@ -39,46 +43,25 @@
       
        <br/><br/>
         <h2>Liste des Commentaires </h2>
-        <table>
-            <tr>
-                <th></th>
-                <th>Date</th>
-                <th>User </th>
-                <th>Comment </th>
-            </tr>
-
+        <ol id="step">
            <% foreach (var item in Model.Store.Comment) { %>
-           <tr>
-                <td>
-                
-              
+              <li class="item1">
                 <% if ( User.Identity.IsAuthenticated &&
                         (User.IsInRole("Admin") || User.IsInRole("Modo") || item.UserPosted == User.Identity.Name)
                        )
                    { %>
-                    <%= Html.ActionLinkWithImage("/Content/img/edit.png", "EditCommentaire", new { commentId = item.Id, storeId = Model.Store.StoreId })%>
-                    
-                    <%= Html.ActionLinkWithImage("/Content/img/Trash.png", "SupprimerCommentaire", new { commentId = item.Id, storeId = Model.Store.StoreId })%>
-                    <%--<%= Html.ActionLink("Edit", "EditCommentaire", new { commentId = item.Id, storeId = Model.Store.StoreId })%> |--%>
-                    
-                    <%--<%= Html.ActionLink("Supprimer", "SupprimerCommentaire", new { commentId = item.Id, storeId = Model.Store.StoreId })%>--%>
+                   <span class="icons">
+                    <%= Html.ActionLinkWithImage(Url.Content("~/Content/img/edit.png"), "EditCommentaire", new { commentId = item.Id, storeId = Model.Store.StoreId })%>
+                    <%= Html.ActionLinkWithImage(Url.Content("~/Content/img/supprimer.png"), "SupprimerCommentaire", new { commentId = item.Id, storeId = Model.Store.StoreId })%>
+                   </span>
                 <% } %>
        
-                </td>
-               
-                <td>
-                    <%= Html.Encode(String.Format("{0:dd/MM/yyyy}", item.DatePosted))%>
-                </td>
-                <td>
-                    <%= Html.Encode(item.UserPosted) %>
-                </td>
-                <td>
-                    <%= Html.Encode(item.Text) %>
-                </td>
-            </tr>
-        
-        <% } %>
-      </table>
+                    <h3 ><%= Html.Encode(item.UserPosted) %></h3>
+                    <p class="time"><%= Html.Encode(String.Format("{0:dd/MM/yyyy}", item.DatePosted))%></p>
+                    <p><%= Html.Encode(item.Text) %></p>
+          <% } %>
+          </li>
+       </ol>
        
        
        <br/><br/>
@@ -95,8 +78,10 @@
                 </div>
                 <div class="editor-field">
                     <%= Html.Hidden("storeId", Model.Store.StoreId)%>
-                    <%= Html.TextAreaFor(model => model.Comment.Text, new { rows = 5, cols = 70 })%>
                     <%= Html.ValidationMessageFor(model => model.Comment.Text)%>
+                    <%= Html.TextAreaFor(model => model.Comment.Text, new { rows = 5, cols = 70 })%>
+                    <div class="wmd-preview"></div>
+                    
                 </div>
                 
                 <p>

@@ -1,0 +1,5 @@
+﻿To Fix: 
+ - edit comment in place with t
+ + Add comment
+ - Vote up/down for stores.
+ - User are they allowed to post more than one comment on a certain store?

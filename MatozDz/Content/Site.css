@@ -431,3 +431,46 @@ input[type="password"]
                  border:1px solid #E61636; text-decoration:none;font-weight:normal;}
 
 
+/* step style */
+#step {
+	margin: 5px 0 0px 0;
+	padding: 0;
+}
+#step li 
+{
+	
+	padding: 0px 0 0px 110px;
+	list-style: none;
+	position: relative;
+	
+}
+#step h3 
+{
+	border-top: solid 1px #ccc;
+	font: bold 140%/110% Arial, Helvetica, sans-serif;
+	color: #666;
+}
+#step .item1 
+{
+	background: url(img/picture.png) no-repeat;
+	background-position:0 10px;
+}
+#commentlist .time {
+	color: #ccc;
+	
+}
+#step .icons {
+	position: absolute;
+	right: 0;
+	top: 2px;
+	
+}
+
+.wmd-preview {
+border:2px dotted #CCCCCC;
+clear:both;
+font-size:107%;
+line-height:130%;
+padding:3px;
+width:660px;
+}

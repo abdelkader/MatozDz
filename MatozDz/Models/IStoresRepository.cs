@@ -18,6 +18,9 @@ namespace MatozDz.Models
         /* Comment handling methods...*/
         void AddComment(Comment comment, int storeId);
         void DeleteComment(int commentId);
+
+
+        bool CheckUser(string user);
     }
 }
 

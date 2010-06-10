@@ -89,10 +89,14 @@
     <Compile Include="ViewModel\StoreDetail.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\img\Detail.png" />
     <Content Include="Content\img\edit.png" />
     <Content Include="Content\img\buttonbg.png" />
     <Content Include="Content\img\Logo.gif" />
-    <Content Include="Content\img\Trash.png" />
+    <Content Include="Content\img\picture.png" />
+    <Content Include="Content\img\step1.png" />
+    <Content Include="Content\img\supprimer.png" />
+    <Content Include="Content\img\User.png" />
     <Content Include="Content\jquery.autocomplete.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
@@ -101,6 +105,28 @@
     <Content Include="Scripts\jquery-1.4.2.js" />
     <Content Include="Scripts\jquery-1.4.2.min-vsdoc.js" />
     <Content Include="Scripts\jquery.autocomplete.js" />
+    <Content Include="Scripts\wmd\images\bg-fill.png" />
+    <Content Include="Scripts\wmd\images\bg.png" />
+    <Content Include="Scripts\wmd\images\blockquote.png" />
+    <Content Include="Scripts\wmd\images\bold.png" />
+    <Content Include="Scripts\wmd\images\code.png" />
+    <Content Include="Scripts\wmd\images\h1.png" />
+    <Content Include="Scripts\wmd\images\hr.png" />
+    <Content Include="Scripts\wmd\images\img.png" />
+    <Content Include="Scripts\wmd\images\italic.png" />
+    <Content Include="Scripts\wmd\images\link.png" />
+    <Content Include="Scripts\wmd\images\ol.png" />
+    <Content Include="Scripts\wmd\images\redo.png" />
+    <Content Include="Scripts\wmd\images\separator.png" />
+    <Content Include="Scripts\wmd\images\ul.png" />
+    <Content Include="Scripts\wmd\images\undo.png" />
+    <Content Include="Scripts\wmd\images\wmd-on.png" />
+    <Content Include="Scripts\wmd\images\wmd.png" />
+    <Content Include="Scripts\wmd\showdown.js" />
+    <Content Include="Scripts\wmd\wmd-base.js" />
+    <Content Include="Scripts\wmd\wmd-plus.js" />
+    <Content Include="Scripts\wmd\wmd.js" />
+    <Content Include="Todo.txt" />
     <Content Include="Views\Magasins\Ajout.aspx" />
     <Content Include="Views\Magasins\Detail.aspx" />
     <Content Include="Views\Magasins\Edit.aspx" />

@@ -4,6 +4,48 @@
     Register
 </asp:Content>
 
+
+<asp:Content ID="Content3" ContentPlaceHolderID="HeaderContent" runat="server">
+ <style type="text/css">
+        .green
+        {
+            color: Green;
+        }
+        .red
+        {
+            color: Red;
+        }
+ </style>
+    
+<script type="text/javascript">
+
+    $(document).ready(function() {
+    
+        $("#btnCheck").click(function() {
+            
+            var name = $("#username").val(); //Value entered in the text box
+            var status = $("#divStatus"); //DIV object to display the status message
+            
+            status.html("Checking....") //While our Thread works, we will show some message to indicate the progress
+
+            //jQuery AJAX Post request
+            $.post('<%= Url.Action("CheckName", "Account") %>', { username: name },
+            function(data) {
+                if (data == "true") {
+                    status.html(name + " is available!").attr('class', 'green');
+                } else {
+                    status.html(name + " is not available!").attr('class', 'red');
+                }
+            });
+        });
+    });
+</script>
+
+</asp:Content>
+
+
+
+
 <asp:Content ID="registerContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2>Create a New Account</h2>
     <p class="spacer">
@@ -21,6 +63,8 @@
                     <label for="username">Username:</label>
                     <%= Html.TextBox("username") %>
                     <%= Html.ValidationMessage("username") %>
+                    <input  type="button" id="btnCheck" value="Check!" />
+                    <div id="divStatus"></div>
                 </p>
                 <p>
                     <label for="email">Email:</label>
@@ -38,6 +82,7 @@
                     <%= Html.ValidationMessage("confirmPassword") %>
                 </p>
                 <p>
+                    
                     <input type="submit" value="Register" />
                 </p>
             </fieldset>

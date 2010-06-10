@@ -1,0 +1,12 @@
+What's all about...
+===================
+
+A simple website made with asp.net mvc. Basically, it lists all computer
+and electronics stores all over the country. Just a pet project to learn MVC 
+
+
+TODO:
++ Add web forms authentication
++ Add logging
++ Add Validation
+

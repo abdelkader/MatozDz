@@ -4,6 +4,20 @@
     Home Page
 </asp:Content>
 
+<asp:Content ID="Content3" ContentPlaceHolderID="HeaderContent" runat="server">
+   <script language="javascript" type="text/javascript" src="<%=Url.Content("~/Scripts/jquery.autocomplete.js") %>"></script>
+   <link href="<%= Url.Content("~/Content/jquery.autocomplete.css") %>" rel="stylesheet" type="text/css" />
+   
+   <script language="javascript" type="text/javascript">   
+        $(document).ready(function() {
+        $("#subheader input#id").autocomplete('<%= Url.Action("WilayaList", "Magasins") %>');
+        }); 
+    </script>
+
+</asp:Content>
+
+
+
 <asp:Content ID="indexContent" ContentPlaceHolderID="MainContent" runat="server">
  
     <div id="subheader">

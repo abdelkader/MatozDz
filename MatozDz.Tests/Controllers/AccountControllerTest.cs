@@ -7,6 +7,7 @@ using System.Web.Security;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MatozDz;
 using MatozDz.Controllers;
+using MatozDz.Models;
 
 namespace MatozDz.Tests.Controllers
 {
@@ -130,9 +131,10 @@ namespace MatozDz.Tests.Controllers
             // Arrange
             IFormsAuthentication formsAuth = new MockFormsAuthenticationService();
             IMembershipService membershipService = new AccountMembershipService();
+            IStoresRepository storeService  = new StoresRepository();
 
             // Act
-            AccountController controller = new AccountController(formsAuth, membershipService);
+            AccountController controller = new AccountController(formsAuth, membershipService, storeService);
 
             // Assert
             Assert.AreEqual(formsAuth, controller.FormsAuth, "FormsAuth property did not match.");
@@ -356,10 +358,14 @@ namespace MatozDz.Tests.Controllers
 
         private static AccountController GetAccountController()
         {
+            //to modify
             IFormsAuthentication formsAuth = new MockFormsAuthenticationService();
             MembershipProvider membershipProvider = new MockMembershipProvider();
+            IStoresRepository storeService = new StoresRepository();
+
             AccountMembershipService membershipService = new AccountMembershipService(membershipProvider);
-            AccountController controller = new AccountController(formsAuth, membershipService);
+
+            AccountController controller = new AccountController(formsAuth, membershipService, storeService);
             ControllerContext controllerContext = new ControllerContext(new MockHttpContext(), new RouteData(), controller);
             controller.ControllerContext = controllerContext;
             return controller;

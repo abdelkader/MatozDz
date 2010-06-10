@@ -7,6 +7,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 using System.Web.UI;
+using MatozDz.Models;
 
 namespace MatozDz.Controllers
 {
@@ -14,35 +15,40 @@ namespace MatozDz.Controllers
     [HandleError]
     public class AccountController : Controller
     {
+        public IFormsAuthentication FormsAuth { get; private set; }
+        public IMembershipService MembershipService { get; private set; }
+        private readonly IStoresRepository _repository;
 
         // This constructor is used by the MVC framework to instantiate the controller using
         // the default forms authentication and membership providers.
-
         public AccountController()
-            : this(null, null)
+            : this(null, null, null)
         {
         }
+
+        public string CheckName(FormCollection form)
+        {
+            
+            string name = form["username"];
+
+            if (_repository.CheckUser(name))
+                return "true";
+
+            return "false";
+        }
+
 
         // This constructor is not used by the MVC framework but is instead provided for ease
         // of unit testing this type. See the comments at the end of this file for more
         // information.
-        public AccountController(IFormsAuthentication formsAuth, IMembershipService service)
+        public AccountController(IFormsAuthentication formsAuth, IMembershipService service, IStoresRepository repository)
         {
             FormsAuth = formsAuth ?? new FormsAuthenticationService();
             MembershipService = service ?? new AccountMembershipService();
+            _repository = repository ?? new StoresRepository();
         }
 
-        public IFormsAuthentication FormsAuth
-        {
-            get;
-            private set;
-        }
-
-        public IMembershipService MembershipService
-        {
-            get;
-            private set;
-        }
+       
 
         public ActionResult LogOn()
         {

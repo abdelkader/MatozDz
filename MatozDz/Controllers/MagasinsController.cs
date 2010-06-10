@@ -213,6 +213,7 @@ namespace MatozDz.Controllers
        
         //todo add comment
         [HttpPost]
+        [ValidateInput(false)] 
         public ActionResult AjoutCommentaire(Comment comment, int storeId)
         {
             if (ModelState.IsValid)

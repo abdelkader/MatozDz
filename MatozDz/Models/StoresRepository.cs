@@ -95,10 +95,21 @@ namespace MatozDz.Models
 
         public void DeleteComment(int commentId)
         {
-            var comment = _db.Comment. Where(p => p.Id == commentId ).FirstOrDefault();
+            var comment = _db.Comment.Where(p => p.Id == commentId ).FirstOrDefault();
             if (comment != null)
                 _db.DeleteObject(comment);
 
+        }
+
+
+
+        
+
+
+        public bool CheckUser(string userToRegister)
+        {
+            var user = _db.aspnet_Users.Where(p => p.UserName == userToRegister).FirstOrDefault();
+            return (user != null);
         }
 
         
