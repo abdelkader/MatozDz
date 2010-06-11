@@ -32,9 +32,9 @@ namespace MatozDz.Controllers
             string name = form["username"];
 
             if (_repository.CheckUser(name))
-                return "true";
+                return "false";
 
-            return "false";
+            return "true";
         }
 
 

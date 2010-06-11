@@ -398,28 +398,7 @@ input[type="password"]
     margin-bottom:20px;
 
 }
-/*TextBox autocomplete..
-.ac_results { 
-  background-color:#b0c4de;
-} 
-.ac_results ul { 
-  margin:0; 
-  padding:0; 
-  list-style-type:none; 
-  border: solid 1px #ccc; 
-} 
 
-.ac_results ul li { 
-  font-family: Arial, Verdana, Sans-Serif; 
-  font-size: 12px; 
-  margin: 1px; 
-  padding: 3px; 
-  cursor: pointer; 
-} 
-
-.ac_results ul li.ac_over { 
-  background-color: #acf; 
-} */
 /* Paging Style */
 .pages { color:red;font-weight:bold; font-size:11px;}
 .pages  .item{padding: 1px 6px;font-size: 13px;} /*numeric pager items*/
@@ -466,6 +445,7 @@ input[type="password"]
 	
 }
 
+
 .wmd-preview {
 border:2px dotted #CCCCCC;
 clear:both;
@@ -473,4 +453,25 @@ font-size:107%;
 line-height:130%;
 padding:3px;
 width:660px;
+}
+/* textarea style */
+input, select, textarea {
+	color:#444444;
+	font-family:"Lucida Grande",sans-serif;
+	font-size:1.4em;
+	line-height:1.3em !important;
+	padding:5px;
+}
+
+input[type="text"], select, textarea {
+	background-color:#FFFFFF;
+	border:1px solid #CCCCCC;
+}
+
+
+input[type="button"], input[type="submit"] {
+	color:#444444;
+	font-size:1.2em;
+	height:2.5em;
+	margin-top:5px;
 }

@@ -94,7 +94,6 @@
     <Content Include="Content\img\buttonbg.png" />
     <Content Include="Content\img\Logo.gif" />
     <Content Include="Content\img\picture.png" />
-    <Content Include="Content\img\step1.png" />
     <Content Include="Content\img\supprimer.png" />
     <Content Include="Content\img\User.png" />
     <Content Include="Content\jquery.autocomplete.css" />

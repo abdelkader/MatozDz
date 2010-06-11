@@ -29,7 +29,7 @@
                     <%= Html.CheckBox("rememberMe") %> <label class="inline" for="rememberMe">Remember me?</label>
                 </p>
                 <p>
-                    <input type="submit" value="Log On" />
+                    <input type="submit" value="Se connecter" />
                 </p>
             </fieldset>
         </div>

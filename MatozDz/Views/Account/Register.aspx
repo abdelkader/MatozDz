@@ -22,7 +22,6 @@
     $(document).ready(function() {
     
         $("#btnCheck").click(function() {
-            
             var name = $("#username").val(); //Value entered in the text box
             var status = $("#divStatus"); //DIV object to display the status message
             
@@ -32,9 +31,9 @@
             $.post('<%= Url.Action("CheckName", "Account") %>', { username: name },
             function(data) {
                 if (data == "true") {
-                    status.html(name + " is available!").attr('class', 'green');
+                    status.html(name + " est disponible !").attr('class', 'green');
                 } else {
-                    status.html(name + " is not available!").attr('class', 'red');
+                    status.html(name + " n'est pas disponible !").attr('class', 'red');
                 }
             });
         });
@@ -53,7 +52,7 @@
    
         Passwords are required to be a minimum of <%=Html.Encode(ViewData["PasswordLength"])%> characters in length.
     </p>
-    <%= Html.ValidationSummary("Account creation was unsuccessful. Please correct the errors and try again.") %>
+    <%= Html.ValidationSummary("La création du compte a échoué, veuillez corriger les informations et essayer de nouveau.") %>
 
     <% using (Html.BeginForm()) { %>
         <div>
@@ -83,7 +82,7 @@
                 </p>
                 <p>
                     
-                    <input type="submit" value="Register" />
+                    <input type="submit" value="S'enregistrer" />
                 </p>
             </fieldset>
         </div>
