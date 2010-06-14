@@ -37,10 +37,11 @@ namespace MatozDz.Controllers
         //[OutputCache(Duration = 10, VaryByParam = "none")]
         public ActionResult WilayaList()
         {
+            //todo return only wilaya that start with the searched word
             var wilayas = _repository.GetAllWilayas().ToList();
             var listWilaya = new string[wilayas.Count()];
             
-            for (int i = 0; i < wilayas.Count(); i++)
+            for (var i = 0; i < wilayas.Count(); i++)
             {
                 listWilaya[i] = wilayas[i].name;
             }
@@ -115,35 +116,35 @@ namespace MatozDz.Controllers
         [HttpPost, Authorize]
         public ActionResult Ajout(Store store)
         {
-            if (ModelState.IsValid)
+
+
+            if (!ModelState.IsValid)
             {
-                try
-                {
-                    
-                    var wilayaId = Request.Form["WilayaId"];
+                var wilaya = _repository.GetAllWilayas();
+                ViewData["Wilayas"] = new SelectList(wilaya, "WilayaId", "name");
 
-                    store.AddedByUser = User.Identity.Name;
-                    store.UpdatedByUser = User.Identity.Name;
-                    store.DateAdded = _date.GetDate();
-                    store.LastDateUpdated = _date.GetDate();
-
-
-                    _repository.Add(store, wilayaId);
-                    _repository.Save();
-
-                    return RedirectToAction("Wilaya", new { id = wilayaId });
-                }
-                // Todo Add exception handling.
-                catch (Exception e) 
-                {
-                    ;
-                   // ModelState.AddRuleViolations(dinner.GetRuleViolations());
-                }
+                return View();
             }
 
-            return RedirectToAction("Ajout");
-        }
+               
+            var wilayaId = Request.Form["WilayaId"];
 
+            store.AddedByUser = User.Identity.Name;
+            store.UpdatedByUser = User.Identity.Name;
+            store.DateAdded = _date.GetDate();
+            store.LastDateUpdated = _date.GetDate();
+
+
+            _repository.Add(store, wilayaId);
+            _repository.Save();
+
+            return RedirectToAction("Wilaya", new { id = wilayaId });
+
+            
+        }
+       
+     
+        
         public ActionResult Detail(int id)
         {
             var store = _repository.GetStoreById(id);

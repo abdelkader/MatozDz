@@ -85,6 +85,7 @@
       <DependentUpon>MatozDzModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\StoresRepository.cs" />
+    <Compile Include="Models\Validation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\StoreDetail.cs" />
   </ItemGroup>
@@ -92,6 +93,8 @@
     <Content Include="Content\img\Detail.png" />
     <Content Include="Content\img\edit.png" />
     <Content Include="Content\img\buttonbg.png" />
+    <Content Include="Content\img\EmptyStar.png" />
+    <Content Include="Content\img\FilledStar.png" />
     <Content Include="Content\img\Logo.gif" />
     <Content Include="Content\img\picture.png" />
     <Content Include="Content\img\supprimer.png" />
