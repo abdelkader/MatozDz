@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="46067a3f-e0c0-40d9-9fd4-0f572ea69211" name="dabed@MIC5925 2010-06-15 10:47:02" runUser="RUSSELL\dabed" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Default Run Configuration" id="4b22bdc5-557e-4ecc-a137-c6ced1791042">
+    <Deployment runDeploymentRoot="D:\perso\PortableGit-1.7.0.2\MatozDz\TestResults\dabed_MIC5925 2010-06-15 10_47_02">
+      <DeploymentItem filename="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\bin\MatozDz.dll" />
+      <DeploymentItem filename="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Lib\Moq.dll" />
+    </Deployment>
+    <Hosts skipUnhostableTests="false" />
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2010-06-15T10:47:02.4747036-04:00" queuing="2010-06-15T10:47:02.8343362-04:00" start="2010-06-15T10:47:02.8499724-04:00" finish="2010-06-15T10:47:03.3346946-04:00" />
+  <TestDefinitions>
+    <UnitTest name="Detail_Can_Handle_invalid_value" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="0eae54b2-9f54-aa5c-b20b-9a781f2d57d7">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="4cc21498-2bd6-4508-9212-bd6c5017ec63" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.MagasinsControllerTest, MatozDz.Tests" name="Detail_Can_Handle_invalid_value" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0eae54b2-9f54-aa5c-b20b-9a781f2d57d7" executionId="4cc21498-2bd6-4508-9212-bd6c5017ec63" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="4cc21498-2bd6-4508-9212-bd6c5017ec63" testId="0eae54b2-9f54-aa5c-b20b-9a781f2d57d7" testName="Detail_Can_Handle_invalid_value" computerName="MIC5925" duration="00:00:00.1870878" startTime="2010-06-15T10:47:02.8499724-04:00" endTime="2010-06-15T10:47:03.3346946-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;detail&gt;. Actual:&lt;error&gt;. Error page should appear if store id is invalid</Message>
+          <StackTrace>   at MatozDz.Tests.Controllers.MagasinsControllerTest.Detail_Can_Handle_invalid_value() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\MagasinsControllerTest.cs:line 51
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

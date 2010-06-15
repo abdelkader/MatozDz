@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="d86d97ff-3773-45e3-81a0-01c5bcdcd4ce" name="dabed@MIC5925 2010-06-14 11:27:44" runUser="RUSSELL\dabed" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Default Run Configuration" id="d2392be8-63fc-414b-ab7e-07e625cf0f5d">
+    <Deployment runDeploymentRoot="D:\perso\PortableGit-1.7.0.2\MatozDz\TestResults\dabed_MIC5925 2010-06-14 11_27_44">
+      <DeploymentItem filename="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\bin\MatozDz.dll" />
+    </Deployment>
+    <Hosts skipUnhostableTests="false" />
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2010-06-14T11:27:44.1372498-04:00" queuing="2010-06-14T11:27:45.1689618-04:00" start="2010-06-14T11:27:45.2940178-04:00" finish="2010-06-14T11:27:48.0608818-04:00" />
+  <TestDefinitions>
+    <UnitTest name="About" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="246cfd1f-1bd7-e31f-df15-896476b32d86">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="7fb9d45a-fdef-41c3-91da-0f12aee5b77d" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.HomeControllerTest, MatozDz.Tests" name="About" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="246cfd1f-1bd7-e31f-df15-896476b32d86" executionId="7fb9d45a-fdef-41c3-91da-0f12aee5b77d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="7fb9d45a-fdef-41c3-91da-0f12aee5b77d" testId="246cfd1f-1bd7-e31f-df15-896476b32d86" testName="About" computerName="MIC5925" duration="00:00:01.1774238" startTime="2010-06-14T11:27:45.4347058-04:00" endTime="2010-06-14T11:27:47.9670898-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.HomeControllerTest.About threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Controllers.HomeController..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Controllers\HomeController.cs:line 12
+   at MatozDz.Tests.Controllers.HomeControllerTest.About() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\HomeControllerTest.cs:line 33
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -142,15 +142,24 @@ namespace MatozDz.Controllers
 
             
         }
-       
-     
-        
+
+
+        [HandleError]
         public ActionResult Detail(int id)
         {
             var store = _repository.GetStoreById(id);
             
-            return View(store);
+            if (store == null || store.Store == null)
+            {
+                TempData["error"] = "Aucun magasin avec cet ID";
+                return View("error");
+
+            }
+
+            return View("Detail",store);
         }
+
+
 
         [Authorize]
         public ActionResult Edit(int id)
@@ -159,7 +168,7 @@ namespace MatozDz.Controllers
             ViewData["Wilayas"] = new SelectList(wilaya, "WilayaId", "name");
 
             var store = _repository.GetStoreById(id);
-            return View(store);
+            return View(store.Store);
         }
 
         [HttpPost , Authorize]

@@ -6,22 +6,16 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="HeaderContent" runat="server">
-<script type="text/javascript">
-    $(document).ready(function() {
-    $(".supprimerCommentaire").click(function() {
+
+<script language="javascript" type="text/javascript">
+
+    $(function() {
+      $(".supprimerCommentaire").click(function() {
 
         $(this).parents(".CommentItem").animate({ backgroundColor: "#fbc7c7" }, "fast")
 		.animate({ opacity: "hide" }, "slow")
         return false;
-    });
-
-
-    });
-</script>
-<script language="javascript" type="text/javascript">
-
-    $(function() {
-     
+         });
     
         $("img.rating").mouseover(function() {
             giveRating($(this), "FilledStar.png");
@@ -111,7 +105,7 @@
                   
 
             <a href="<%=Url.Action("SupprimerCommentaire", new { commentId = item.Id, storeId = Model.Store.StoreId,  })%>"  class="supprimerCommentaire">
-            <img src="<%= Url.Content("~/Content/img/supprimer.png")%>"></img></a>
+            <img src="<%= Url.Content("~/Content/img/supprimer.png")%>" alt="Supprimer Commentaire" /></a>
 
 
 
@@ -144,7 +138,7 @@
                 <div class="editor-field">
                     <%= Html.Hidden("storeId", Model.Store.StoreId)%>
                     <%= Html.ValidationMessageFor(model => model.Comment.Text)%>
-                    <%= Html.TextAreaFor(model => model.Comment.Text, new { rows = 5, cols = 70 })%>
+                    <%= Html.TextAreaFor(model => model.Comment.Text, new { rows = 5, cols = 59 })%>
                     <div class="wmd-preview"></div>
                     
                 </div>

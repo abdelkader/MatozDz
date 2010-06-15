@@ -1,0 +1,674 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="3a04683b-32c6-4ec1-ba90-620d3c26dff2" name="dabed@MIC5925 2010-06-14 11:28:52" runUser="RUSSELL\dabed" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Default Run Configuration" id="2caf623a-5328-46c9-8fb0-07e718dd052a">
+    <Deployment runDeploymentRoot="D:\perso\PortableGit-1.7.0.2\MatozDz\TestResults\dabed_MIC5925 2010-06-14 11_28_52">
+      <DeploymentItem filename="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\bin\MatozDz.dll" />
+    </Deployment>
+    <Hosts skipUnhostableTests="false" />
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="26" executed="26" error="0" failed="26" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2010-06-14T11:28:52.3709298-04:00" queuing="2010-06-14T11:28:53.1056338-04:00" start="2010-06-14T11:28:53.2619538-04:00" finish="2010-06-14T11:29:09.3941778-04:00" />
+  <TestDefinitions>
+    <UnitTest name="RegisterPostReturnsViewIfRegistrationFails" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="edfd9a58-9ab3-b60a-6a6c-3a2f7153df38">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="26e2eff6-78cd-4638-baee-68de8bf63678" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="RegisterPostReturnsViewIfRegistrationFails" />
+    </UnitTest>
+    <UnitTest name="ChangePasswordPostReturnsViewIfCurrentPasswordNotSpecified" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="3c5750ae-d54e-5654-b6dd-fb7660f6e6d6">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="9b8b0fb2-c80e-4d1e-8302-e9606517d069" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="ChangePasswordPostReturnsViewIfCurrentPasswordNotSpecified" />
+    </UnitTest>
+    <UnitTest name="RegisterPostReturnsViewIfNewPasswordDoesNotMatchConfirmPassword" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="7b72557b-f4f3-0169-4308-2f572e39d95b">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="aa0e3630-ba16-42d0-a646-c1e46903c775" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="RegisterPostReturnsViewIfNewPasswordDoesNotMatchConfirmPassword" />
+    </UnitTest>
+    <UnitTest name="LogOff" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="9828ba1b-a8c2-15f7-91c2-4d06e2eeb36e">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="f50fa8b9-c090-4282-8c50-1e22f82abbc6" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="LogOff" />
+    </UnitTest>
+    <UnitTest name="ChangePasswordPostReturnsViewIfNewPasswordIsTooShort" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="92d750e1-a809-cb20-7701-0c6a27c4f0cf">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="a1e20839-5f07-4d19-ab5d-d44bae886ea2" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="ChangePasswordPostReturnsViewIfNewPasswordIsTooShort" />
+    </UnitTest>
+    <UnitTest name="ChangePasswordPostReturnsViewIfNewPasswordIsNull" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="8e8d4803-cf26-e534-24b3-73c5a0178cdf">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="842d63f5-c26a-4868-9c46-abf41db6b8fd" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="ChangePasswordPostReturnsViewIfNewPasswordIsNull" />
+    </UnitTest>
+    <UnitTest name="RegisterPostReturnsViewIfEmailNotSpecified" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="cf856182-5fe9-6fbf-d16d-6d11bbb2deb5">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="35ddf680-e235-41e4-bb35-aac0b0826c3b" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="RegisterPostReturnsViewIfEmailNotSpecified" />
+    </UnitTest>
+    <UnitTest name="ChangePasswordPostRedirectsOnSuccess" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="069d5d8f-e259-5dce-f1c0-6904771e0a23">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="37036a95-0e5a-42f7-9ddb-552f136a8c98" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="ChangePasswordPostRedirectsOnSuccess" />
+    </UnitTest>
+    <UnitTest name="LoginPostReturnsViewIfUsernameOrPasswordIsIncorrect" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="37dfb60e-7e9f-c930-6c91-2137f5e7feb2">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="1baa3813-7062-4789-b5b6-2fef6010b4cd" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="LoginPostReturnsViewIfUsernameOrPasswordIsIncorrect" />
+    </UnitTest>
+    <UnitTest name="ChangePasswordGetReturnsView" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="0a7f453c-5904-f2bf-f36a-5014a7c89ed4">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="71d368df-4da5-487c-bfc9-5186b65d0c4f" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="ChangePasswordGetReturnsView" />
+    </UnitTest>
+    <UnitTest name="LoginGet" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="03361f2c-a02a-fdcd-b9b9-2e8f894080d1">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="bb4c8f05-493e-4686-92ea-34956eb16711" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="LoginGet" />
+    </UnitTest>
+    <UnitTest name="ConstructorSetsProperties" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="1445f4ea-da88-ebf0-d788-652b3f12165b">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="b03f1a0e-6d5c-46d3-bdab-99212f81ccd6" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="ConstructorSetsProperties" />
+    </UnitTest>
+    <UnitTest name="RegisterPostReturnsViewIfPasswordIsNull" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="ca92acac-163e-4e33-d2ba-d002704af95a">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="8d3fa547-5e8e-4f51-8231-a5734c25421f" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="RegisterPostReturnsViewIfPasswordIsNull" />
+    </UnitTest>
+    <UnitTest name="RegisterPostReturnsViewIfUsernameNotSpecified" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="867e847b-45ad-8c3d-cba2-19573cbd72dd">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="b87c9922-5d38-44b8-81b9-72cbab973bed" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="RegisterPostReturnsViewIfUsernameNotSpecified" />
+    </UnitTest>
+    <UnitTest name="ConstructorSetsPropertiesToDefaultValues" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="84207a5e-5ea6-d259-f96c-6824da00e75b">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="7e5bcf90-005c-446f-addc-9198e1c3337c" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="ConstructorSetsPropertiesToDefaultValues" />
+    </UnitTest>
+    <UnitTest name="LoginPostReturnsViewIfPasswordNotSpecified" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="b24967be-a82a-c881-175f-f8c4b7f521fb">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="2d4a7da4-150b-4ca2-9314-9a83a2774fdd" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="LoginPostReturnsViewIfPasswordNotSpecified" />
+    </UnitTest>
+    <UnitTest name="ChangePasswordSuccess" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="31643a1b-5291-6a2e-6366-2be1fd54189a">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="97965216-8ae7-4d6c-9162-dbbb0a6fe423" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="ChangePasswordSuccess" />
+    </UnitTest>
+    <UnitTest name="ChangePasswordPostReturnsViewIfNewPasswordDoesNotMatchConfirmPassword" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="4b61dc4a-c50c-c234-4639-aea86125e359">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="a5f1ae1d-0b1e-4eb8-bcf2-1888cdf7bbd7" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="ChangePasswordPostReturnsViewIfNewPasswordDoesNotMatchConfirmPassword" />
+    </UnitTest>
+    <UnitTest name="About" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="246cfd1f-1bd7-e31f-df15-896476b32d86">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="0828cca4-4ed2-4f63-959d-2941f504091c" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.HomeControllerTest, MatozDz.Tests" name="About" />
+    </UnitTest>
+    <UnitTest name="LoginPostRedirectsToReturnUrlIfLoginSuccessfulAndReturnUrlGiven" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="b5aeb3df-c1ca-fb3a-8002-27672db6307f">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="1332eb4f-e55b-4d96-bb6e-f85a73054981" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="LoginPostRedirectsToReturnUrlIfLoginSuccessfulAndReturnUrlGiven" />
+    </UnitTest>
+    <UnitTest name="RegisterPostReturnsViewIfPasswordIsTooShort" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="5cea7934-393b-e1e2-618f-1997dd69098a">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="3eb77710-4a8c-42fb-93df-afa2593e4328" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="RegisterPostReturnsViewIfPasswordIsTooShort" />
+    </UnitTest>
+    <UnitTest name="RegisterGet" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="a6791254-787a-fa12-3c28-68b847a3aee2">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="61838d5c-95bc-48ad-a04e-9ef5522d1d8d" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="RegisterGet" />
+    </UnitTest>
+    <UnitTest name="ChangePasswordPostReturnsViewIfProviderRejectsPassword" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="2c22fde1-3ca1-2770-2133-70b836ae896e">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="7a242c97-4e49-4232-aa08-d8fc17db68ab" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="ChangePasswordPostReturnsViewIfProviderRejectsPassword" />
+    </UnitTest>
+    <UnitTest name="RegisterPostRedirectsHomeIfRegistrationSuccessful" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="6ebb0810-211a-a4e1-775c-fe38b606a877">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="41074093-40fa-4686-a7fd-031e6fc6367b" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="RegisterPostRedirectsHomeIfRegistrationSuccessful" />
+    </UnitTest>
+    <UnitTest name="LoginPostReturnsViewIfUsernameNotSpecified" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="74097b89-cd70-d627-b081-a2899a99cd36">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="5c87ab21-a4ed-4d91-9430-b7d61adf5af9" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="LoginPostReturnsViewIfUsernameNotSpecified" />
+    </UnitTest>
+    <UnitTest name="LoginPostRedirectsHomeIfLoginSuccessfulButNoReturnUrlGiven" storage="d:\perso\portablegit-1.7.0.2\matozdz\matozdz.tests\bin\debug\matozdz.tests.dll" id="8c66aa41-849e-e769-1558-175b08b172b3">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="2099679d-8910-45a1-975f-252474e8ed02" />
+      <TestMethod codeBase="D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\bin\Debug\MatozDz.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MatozDz.Tests.Controllers.AccountControllerTest, MatozDz.Tests" name="LoginPostRedirectsHomeIfLoginSuccessfulButNoReturnUrlGiven" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0a7f453c-5904-f2bf-f36a-5014a7c89ed4" executionId="71d368df-4da5-487c-bfc9-5186b65d0c4f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="069d5d8f-e259-5dce-f1c0-6904771e0a23" executionId="37036a95-0e5a-42f7-9ddb-552f136a8c98" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3c5750ae-d54e-5654-b6dd-fb7660f6e6d6" executionId="9b8b0fb2-c80e-4d1e-8302-e9606517d069" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4b61dc4a-c50c-c234-4639-aea86125e359" executionId="a5f1ae1d-0b1e-4eb8-bcf2-1888cdf7bbd7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8e8d4803-cf26-e534-24b3-73c5a0178cdf" executionId="842d63f5-c26a-4868-9c46-abf41db6b8fd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92d750e1-a809-cb20-7701-0c6a27c4f0cf" executionId="a1e20839-5f07-4d19-ab5d-d44bae886ea2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2c22fde1-3ca1-2770-2133-70b836ae896e" executionId="7a242c97-4e49-4232-aa08-d8fc17db68ab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="31643a1b-5291-6a2e-6366-2be1fd54189a" executionId="97965216-8ae7-4d6c-9162-dbbb0a6fe423" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1445f4ea-da88-ebf0-d788-652b3f12165b" executionId="b03f1a0e-6d5c-46d3-bdab-99212f81ccd6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="84207a5e-5ea6-d259-f96c-6824da00e75b" executionId="7e5bcf90-005c-446f-addc-9198e1c3337c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="03361f2c-a02a-fdcd-b9b9-2e8f894080d1" executionId="bb4c8f05-493e-4686-92ea-34956eb16711" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8c66aa41-849e-e769-1558-175b08b172b3" executionId="2099679d-8910-45a1-975f-252474e8ed02" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b5aeb3df-c1ca-fb3a-8002-27672db6307f" executionId="1332eb4f-e55b-4d96-bb6e-f85a73054981" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b24967be-a82a-c881-175f-f8c4b7f521fb" executionId="2d4a7da4-150b-4ca2-9314-9a83a2774fdd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="74097b89-cd70-d627-b081-a2899a99cd36" executionId="5c87ab21-a4ed-4d91-9430-b7d61adf5af9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="37dfb60e-7e9f-c930-6c91-2137f5e7feb2" executionId="1baa3813-7062-4789-b5b6-2fef6010b4cd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9828ba1b-a8c2-15f7-91c2-4d06e2eeb36e" executionId="f50fa8b9-c090-4282-8c50-1e22f82abbc6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a6791254-787a-fa12-3c28-68b847a3aee2" executionId="61838d5c-95bc-48ad-a04e-9ef5522d1d8d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6ebb0810-211a-a4e1-775c-fe38b606a877" executionId="41074093-40fa-4686-a7fd-031e6fc6367b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cf856182-5fe9-6fbf-d16d-6d11bbb2deb5" executionId="35ddf680-e235-41e4-bb35-aac0b0826c3b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b72557b-f4f3-0169-4308-2f572e39d95b" executionId="aa0e3630-ba16-42d0-a646-c1e46903c775" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ca92acac-163e-4e33-d2ba-d002704af95a" executionId="8d3fa547-5e8e-4f51-8231-a5734c25421f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5cea7934-393b-e1e2-618f-1997dd69098a" executionId="3eb77710-4a8c-42fb-93df-afa2593e4328" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="edfd9a58-9ab3-b60a-6a6c-3a2f7153df38" executionId="26e2eff6-78cd-4638-baee-68de8bf63678" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="867e847b-45ad-8c3d-cba2-19573cbd72dd" executionId="b87c9922-5d38-44b8-81b9-72cbab973bed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="246cfd1f-1bd7-e31f-df15-896476b32d86" executionId="0828cca4-4ed2-4f63-959d-2941f504091c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="71d368df-4da5-487c-bfc9-5186b65d0c4f" testId="0a7f453c-5904-f2bf-f36a-5014a7c89ed4" testName="ChangePasswordGetReturnsView" computerName="MIC5925" duration="00:00:00.0747833" startTime="2010-06-14T11:28:53.3870098-04:00" endTime="2010-06-14T11:28:53.8559698-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.ChangePasswordGetReturnsView threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 364
+   at MatozDz.Tests.Controllers.AccountControllerTest.ChangePasswordGetReturnsView() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 23
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="37036a95-0e5a-42f7-9ddb-552f136a8c98" testId="069d5d8f-e259-5dce-f1c0-6904771e0a23" testName="ChangePasswordPostRedirectsOnSuccess" computerName="MIC5925" duration="00:00:00.0062890" startTime="2010-06-14T11:28:53.8716018-04:00" endTime="2010-06-14T11:28:53.8716018-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.ChangePasswordPostRedirectsOnSuccess threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 364
+   at MatozDz.Tests.Controllers.AccountControllerTest.ChangePasswordPostRedirectsOnSuccess() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 36
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9b8b0fb2-c80e-4d1e-8302-e9606517d069" testId="3c5750ae-d54e-5654-b6dd-fb7660f6e6d6" testName="ChangePasswordPostReturnsViewIfCurrentPasswordNotSpecified" computerName="MIC5925" duration="00:00:00.0062743" startTime="2010-06-14T11:28:53.8872338-04:00" endTime="2010-06-14T11:28:53.8872338-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.ChangePasswordPostReturnsViewIfCurrentPasswordNotSpecified threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 364
+   at MatozDz.Tests.Controllers.AccountControllerTest.ChangePasswordPostReturnsViewIfCurrentPasswordNotSpecified() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 49
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a5f1ae1d-0b1e-4eb8-bcf2-1888cdf7bbd7" testId="4b61dc4a-c50c-c234-4639-aea86125e359" testName="ChangePasswordPostReturnsViewIfNewPasswordDoesNotMatchConfirmPassword" computerName="MIC5925" duration="00:00:00.0061934" startTime="2010-06-14T11:28:53.8872338-04:00" endTime="2010-06-14T11:28:53.9028658-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.ChangePasswordPostReturnsViewIfNewPasswordDoesNotMatchConfirmPassword threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 364
+   at MatozDz.Tests.Controllers.AccountControllerTest.ChangePasswordPostReturnsViewIfNewPasswordDoesNotMatchConfirmPassword() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 63
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="842d63f5-c26a-4868-9c46-abf41db6b8fd" testId="8e8d4803-cf26-e534-24b3-73c5a0178cdf" testName="ChangePasswordPostReturnsViewIfNewPasswordIsNull" computerName="MIC5925" duration="00:00:00.0064711" startTime="2010-06-14T11:28:53.9028658-04:00" endTime="2010-06-14T11:28:53.9184978-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.ChangePasswordPostReturnsViewIfNewPasswordIsNull threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 364
+   at MatozDz.Tests.Controllers.AccountControllerTest.ChangePasswordPostReturnsViewIfNewPasswordIsNull() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 77
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a1e20839-5f07-4d19-ab5d-d44bae886ea2" testId="92d750e1-a809-cb20-7701-0c6a27c4f0cf" testName="ChangePasswordPostReturnsViewIfNewPasswordIsTooShort" computerName="MIC5925" duration="00:00:00.0062805" startTime="2010-06-14T11:28:53.9184978-04:00" endTime="2010-06-14T11:28:53.9341298-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.ChangePasswordPostReturnsViewIfNewPasswordIsTooShort threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 364
+   at MatozDz.Tests.Controllers.AccountControllerTest.ChangePasswordPostReturnsViewIfNewPasswordIsTooShort() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 91
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7a242c97-4e49-4232-aa08-d8fc17db68ab" testId="2c22fde1-3ca1-2770-2133-70b836ae896e" testName="ChangePasswordPostReturnsViewIfProviderRejectsPassword" computerName="MIC5925" duration="00:00:00.0061785" startTime="2010-06-14T11:28:53.9341298-04:00" endTime="2010-06-14T11:28:53.9497618-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.ChangePasswordPostReturnsViewIfProviderRejectsPassword threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 364
+   at MatozDz.Tests.Controllers.AccountControllerTest.ChangePasswordPostReturnsViewIfProviderRejectsPassword() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 105
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="97965216-8ae7-4d6c-9162-dbbb0a6fe423" testId="31643a1b-5291-6a2e-6366-2be1fd54189a" testName="ChangePasswordSuccess" computerName="MIC5925" duration="00:00:00.0059977" startTime="2010-06-14T11:28:53.9497618-04:00" endTime="2010-06-14T11:28:53.9653938-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.ChangePasswordSuccess threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 364
+   at MatozDz.Tests.Controllers.AccountControllerTest.ChangePasswordSuccess() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 119
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b03f1a0e-6d5c-46d3-bdab-99212f81ccd6" testId="1445f4ea-da88-ebf0-d788-652b3f12165b" testName="ConstructorSetsProperties" computerName="MIC5925" duration="00:00:00.0197712" startTime="2010-06-14T11:28:53.9653938-04:00" endTime="2010-06-14T11:28:53.9810258-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.ConstructorSetsProperties threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.ConstructorSetsProperties() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 134
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7e5bcf90-005c-446f-addc-9198e1c3337c" testId="84207a5e-5ea6-d259-f96c-6824da00e75b" testName="ConstructorSetsPropertiesToDefaultValues" computerName="MIC5925" duration="00:00:00.0061555" startTime="2010-06-14T11:28:53.9966578-04:00" endTime="2010-06-14T11:28:53.9966578-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.ConstructorSetsPropertiesToDefaultValues threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Controllers.AccountController..ctor(IFormsAuthentication formsAuth, IMembershipService service, IStoresRepository repository) in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Controllers\AccountController.cs:line 48
+   at MatozDz.Controllers.AccountController..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Controllers\AccountController.cs:line 24
+   at MatozDz.Tests.Controllers.AccountControllerTest.ConstructorSetsPropertiesToDefaultValues() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 148
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bb4c8f05-493e-4686-92ea-34956eb16711" testId="03361f2c-a02a-fdcd-b9b9-2e8f894080d1" testName="LoginGet" computerName="MIC5925" duration="00:00:00.0051945" startTime="2010-06-14T11:28:53.9966578-04:00" endTime="2010-06-14T11:28:54.0122898-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.LoginGet threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 364
+   at MatozDz.Tests.Controllers.AccountControllerTest.LoginGet() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 159
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2099679d-8910-45a1-975f-252474e8ed02" testId="8c66aa41-849e-e769-1558-175b08b172b3" testName="LoginPostRedirectsHomeIfLoginSuccessfulButNoReturnUrlGiven" computerName="MIC5925" duration="00:00:00.0052860" startTime="2010-06-14T11:28:54.0122898-04:00" endTime="2010-06-14T11:28:54.0279218-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.LoginPostRedirectsHomeIfLoginSuccessfulButNoReturnUrlGiven threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 364
+   at MatozDz.Tests.Controllers.AccountControllerTest.LoginPostRedirectsHomeIfLoginSuccessfulButNoReturnUrlGiven() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 172
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1332eb4f-e55b-4d96-bb6e-f85a73054981" testId="b5aeb3df-c1ca-fb3a-8002-27672db6307f" testName="LoginPostRedirectsToReturnUrlIfLoginSuccessfulAndReturnUrlGiven" computerName="MIC5925" duration="00:00:00.0053198" startTime="2010-06-14T11:28:54.0279218-04:00" endTime="2010-06-14T11:28:54.0435538-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.LoginPostRedirectsToReturnUrlIfLoginSuccessfulAndReturnUrlGiven threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 364
+   at MatozDz.Tests.Controllers.AccountControllerTest.LoginPostRedirectsToReturnUrlIfLoginSuccessfulAndReturnUrlGiven() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 186
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2d4a7da4-150b-4ca2-9314-9a83a2774fdd" testId="b24967be-a82a-c881-175f-f8c4b7f521fb" testName="LoginPostReturnsViewIfPasswordNotSpecified" computerName="MIC5925" duration="00:00:00.0053247" startTime="2010-06-14T11:28:54.0435538-04:00" endTime="2010-06-14T11:28:54.0435538-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.LoginPostReturnsViewIfPasswordNotSpecified threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 364
+   at MatozDz.Tests.Controllers.AccountControllerTest.LoginPostReturnsViewIfPasswordNotSpecified() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 199
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5c87ab21-a4ed-4d91-9430-b7d61adf5af9" testId="74097b89-cd70-d627-b081-a2899a99cd36" testName="LoginPostReturnsViewIfUsernameNotSpecified" computerName="MIC5925" duration="00:00:00.0055231" startTime="2010-06-14T11:28:54.0591858-04:00" endTime="2010-06-14T11:28:54.0591858-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.LoginPostReturnsViewIfUsernameNotSpecified threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 364
+   at MatozDz.Tests.Controllers.AccountControllerTest.LoginPostReturnsViewIfUsernameNotSpecified() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 212
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1baa3813-7062-4789-b5b6-2fef6010b4cd" testId="37dfb60e-7e9f-c930-6c91-2137f5e7feb2" testName="LoginPostReturnsViewIfUsernameOrPasswordIsIncorrect" computerName="MIC5925" duration="00:00:00.0063405" startTime="2010-06-14T11:28:54.0591858-04:00" endTime="2010-06-14T11:28:54.0748178-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.LoginPostReturnsViewIfUsernameOrPasswordIsIncorrect threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 364
+   at MatozDz.Tests.Controllers.AccountControllerTest.LoginPostReturnsViewIfUsernameOrPasswordIsIncorrect() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 225
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f50fa8b9-c090-4282-8c50-1e22f82abbc6" testId="9828ba1b-a8c2-15f7-91c2-4d06e2eeb36e" testName="LogOff" computerName="MIC5925" duration="00:00:00.0060259" startTime="2010-06-14T11:28:54.0748178-04:00" endTime="2010-06-14T11:28:54.0904498-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.LogOff threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 364
+   at MatozDz.Tests.Controllers.AccountControllerTest.LogOff() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 238
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="61838d5c-95bc-48ad-a04e-9ef5522d1d8d" testId="a6791254-787a-fa12-3c28-68b847a3aee2" testName="RegisterGet" computerName="MIC5925" duration="00:00:00.0073879" startTime="2010-06-14T11:28:54.0904498-04:00" endTime="2010-06-14T11:28:54.1060818-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.RegisterGet threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 364
+   at MatozDz.Tests.Controllers.AccountControllerTest.RegisterGet() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 252
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="41074093-40fa-4686-a7fd-031e6fc6367b" testId="6ebb0810-211a-a4e1-775c-fe38b606a877" testName="RegisterPostRedirectsHomeIfRegistrationSuccessful" computerName="MIC5925" duration="00:00:00.0056783" startTime="2010-06-14T11:28:54.1217138-04:00" endTime="2010-06-14T11:28:54.1217138-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.RegisterPostRedirectsHomeIfRegistrationSuccessful threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 364
+   at MatozDz.Tests.Controllers.AccountControllerTest.RegisterPostRedirectsHomeIfRegistrationSuccessful() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 265
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="35ddf680-e235-41e4-bb35-aac0b0826c3b" testId="cf856182-5fe9-6fbf-d16d-6d11bbb2deb5" testName="RegisterPostReturnsViewIfEmailNotSpecified" computerName="MIC5925" duration="00:00:00.0063681" startTime="2010-06-14T11:28:54.1373458-04:00" endTime="2010-06-14T11:28:54.1529778-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.RegisterPostReturnsViewIfEmailNotSpecified threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 364
+   at MatozDz.Tests.Controllers.AccountControllerTest.RegisterPostReturnsViewIfEmailNotSpecified() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 279
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="aa0e3630-ba16-42d0-a646-c1e46903c775" testId="7b72557b-f4f3-0169-4308-2f572e39d95b" testName="RegisterPostReturnsViewIfNewPasswordDoesNotMatchConfirmPassword" computerName="MIC5925" duration="00:00:00.0062631" startTime="2010-06-14T11:28:54.1529778-04:00" endTime="2010-06-14T11:28:54.1686098-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.RegisterPostReturnsViewIfNewPasswordDoesNotMatchConfirmPassword threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 364
+   at MatozDz.Tests.Controllers.AccountControllerTest.RegisterPostReturnsViewIfNewPasswordDoesNotMatchConfirmPassword() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 293
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8d3fa547-5e8e-4f51-8231-a5734c25421f" testId="ca92acac-163e-4e33-d2ba-d002704af95a" testName="RegisterPostReturnsViewIfPasswordIsNull" computerName="MIC5925" duration="00:00:00.0054364" startTime="2010-06-14T11:28:54.1686098-04:00" endTime="2010-06-14T11:28:54.1842418-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.RegisterPostReturnsViewIfPasswordIsNull threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 364
+   at MatozDz.Tests.Controllers.AccountControllerTest.RegisterPostReturnsViewIfPasswordIsNull() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 307
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3eb77710-4a8c-42fb-93df-afa2593e4328" testId="5cea7934-393b-e1e2-618f-1997dd69098a" testName="RegisterPostReturnsViewIfPasswordIsTooShort" computerName="MIC5925" duration="00:00:00.0053653" startTime="2010-06-14T11:28:54.1842418-04:00" endTime="2010-06-14T11:28:54.1998738-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.RegisterPostReturnsViewIfPasswordIsTooShort threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 364
+   at MatozDz.Tests.Controllers.AccountControllerTest.RegisterPostReturnsViewIfPasswordIsTooShort() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 321
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="26e2eff6-78cd-4638-baee-68de8bf63678" testId="edfd9a58-9ab3-b60a-6a6c-3a2f7153df38" testName="RegisterPostReturnsViewIfRegistrationFails" computerName="MIC5925" duration="00:00:00.0053475" startTime="2010-06-14T11:28:54.1998738-04:00" endTime="2010-06-14T11:28:54.1998738-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.RegisterPostReturnsViewIfRegistrationFails threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 364
+   at MatozDz.Tests.Controllers.AccountControllerTest.RegisterPostReturnsViewIfRegistrationFails() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 335
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b87c9922-5d38-44b8-81b9-72cbab973bed" testId="867e847b-45ad-8c3d-cba2-19573cbd72dd" testName="RegisterPostReturnsViewIfUsernameNotSpecified" computerName="MIC5925" duration="00:00:00.0053050" startTime="2010-06-14T11:28:54.2155058-04:00" endTime="2010-06-14T11:28:54.2155058-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.AccountControllerTest.RegisterPostReturnsViewIfUsernameNotSpecified threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 364
+   at MatozDz.Tests.Controllers.AccountControllerTest.RegisterPostReturnsViewIfUsernameNotSpecified() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\AccountControllerTest.cs:line 349
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0828cca4-4ed2-4f63-959d-2941f504091c" testId="246cfd1f-1bd7-e31f-df15-896476b32d86" testName="About" computerName="MIC5925" duration="00:00:07.3888034" startTime="2010-06-14T11:28:54.2311378-04:00" endTime="2010-06-14T11:29:09.3472818-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method MatozDz.Tests.Controllers.HomeControllerTest.About threw exception:  System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid..</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at MatozDz.Models.MatozDzEntities..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\MatozDzModel.Designer.cs:line 38
+   at MatozDz.Models.StoresRepository..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Models\StoresRepository.cs:line 13
+   at MatozDz.Controllers.HomeController..ctor() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz\Controllers\HomeController.cs:line 12
+   at MatozDz.Tests.Controllers.HomeControllerTest.About() in D:\perso\PortableGit-1.7.0.2\MatozDz\MatozDz.Tests\Controllers\HomeControllerTest.cs:line 33
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
