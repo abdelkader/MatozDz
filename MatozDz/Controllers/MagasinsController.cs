@@ -35,28 +35,18 @@ namespace MatozDz.Controllers
         }
 
         //[OutputCache(Duration = 10, VaryByParam = "none")]
-        public ActionResult WilayaList()
+        public ActionResult WilayaList(string q)
         {
-            //todo return only wilaya that start with the searched word
-            var wilayas = _repository.GetAllWilayas().ToList();
+            
+            var wilayas = _repository.GetAllWilayasThatStartWith(q).ToList();
             var listWilaya = new string[wilayas.Count()];
             
+            //TODO: better way to handle this.
             for (var i = 0; i < wilayas.Count(); i++)
             {
                 listWilaya[i] = wilayas[i].name;
             }
             
-            
-            // public ContentResult Territories(string q, int limit, Int64 timestamp)
-            //{
-            //  StringBuilder responseContentBuilder = new StringBuilder();
-            //  IQueryable<Territory> territories = _repository.GetTerritories(q, limit);
-            //  foreach (Territory territory in territories)
-            //    responseContentBuilder.Append(String.Format("{0}|{1}\n", territory.TerritoryID, territory.TerritoryDescription));
-
-            //  return Content(responseContentBuilder.ToString());
-            //}
-            //return raw text, one result on each line
             return Content(string.Join("\n", listWilaya));
         }
 
@@ -164,32 +154,48 @@ namespace MatozDz.Controllers
         [Authorize]
         public ActionResult Edit(int id)
         {
-            var wilaya = _repository.GetAllWilayas();
-            ViewData["Wilayas"] = new SelectList(wilaya, "WilayaId", "name");
-
             var store = _repository.GetStoreById(id);
+
+            var wilaya = _repository.GetAllWilayas();
+            ViewData["Wilayas"] = new SelectList(wilaya, "WilayaId", "name", store.Store.Wilaya.WilayaId);
+
+            
             return View(store.Store);
         }
 
         [HttpPost , Authorize]
         public ActionResult Edit(int id, FormCollection formValues)
         {
+            if (!ModelState.IsValid)
+            {
+                var originalStore = _repository.GetStoreById(id);
+                var wilaya = _repository.GetAllWilayas();
+                ViewData["Wilayas"] = new SelectList(wilaya, "WilayaId", "name", originalStore.Store.Wilaya.WilayaId);
+
+                return View("Edit");
+            }
+            
             try
             {
+
 
                 var originalStore = _repository.GetStoreById(id);
    
                 originalStore.Store.LastDateUpdated = _date.GetDate();
                 originalStore.Store.UpdatedByUser = User.Identity.Name;
-
-                UpdateModel(originalStore); 
+                //TODO: Is there a better way...
+                originalStore.Store.Wilaya = _repository.GetWilayaById(formValues["WilayaId"]);
+                UpdateModel(originalStore.Store); 
                 _repository.Save();
 
                 return RedirectToAction("Detail", new { id });
             }
-            catch
+            catch (Exception e)
             {
-                return View("Index");
+                TempData["error"] = "Le magasin n'a pas pu être édité !\n erreur : "  + e.Message;
+                return View("error");
+
+                
             }
         }
         
@@ -251,13 +257,15 @@ namespace MatozDz.Controllers
         }
 
         //todo add comment
-        public ActionResult SupprimerCommentaire(int commentId, int storeId)
+        public ActionResult SupprimerCommentaire(int commentId)
         {
 
             _repository.DeleteComment(commentId);
             _repository.Save();
 
-            return RedirectToAction("Detail", new { id = storeId });
+            return new EmptyResult();
+
+            //return RedirectToAction("Detail", new { id = storeId });
         }
     }
 }

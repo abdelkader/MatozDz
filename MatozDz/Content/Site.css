@@ -256,8 +256,6 @@ html[xmlns] .clearfix {
 }
 #searchform input
 {
-
-
 	border: 3px solid #EEEEEE;
 	color: #808080;
 	font-weight: bold;
@@ -273,6 +271,7 @@ html[xmlns] .clearfix {
 	-moz-border-radius-bottomright: 4px;
 	-moz-border-radius-topleft: 4px;
 	-moz-border-radius-topright: 4px;
+	background:url("img/background2.PNG") repeat-x scroll 0 -17px transparent;
 }
 #searchform input:hover
 {
@@ -446,14 +445,7 @@ input[type="password"]
 }
 
 
-.wmd-preview {
-border:2px dotted #CCCCCC;
-clear:both;
-font-size:107%;
-line-height:130%;
-padding:3px;
-width:660px;
-}
+
 /* textarea style */
 input, select, textarea {
 	color:#444444;

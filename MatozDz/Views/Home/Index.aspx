@@ -25,6 +25,9 @@
 		<% { %>
 
             Wilaya : <%= Html.TextBox("id", "", new { @class = "box", @autocomplete = "off" })%>
+            
+            
+            
             <button class="btn" title="Submit Search">Chercher...</button>
         <% } %>
   

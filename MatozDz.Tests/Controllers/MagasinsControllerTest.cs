@@ -18,18 +18,13 @@ namespace MatozDz.Tests.Controllers
     [TestClass]
     public class MagasinsControllerTest
     {
-        public MagasinsControllerTest()
-        {
-            //
-            // TODO: Add constructor logic here
-            //
-        }
-
+       
         [TestMethod]
         public void Detail_Can_Handle_invalid_value()
         {
 
             // Arrange
+            int IdOfInvalidStore = 0;
             var mockTime = new Mock<IDateTime>();
 
             // we don't care the id of the store, we should always return a null value to make this test work.
@@ -41,12 +36,40 @@ namespace MatozDz.Tests.Controllers
             MagasinsController controller = new MagasinsController(mockStoreRepostiroy.Object, mockTime.Object);
 
             // Act
-            var result = controller.Detail(0) as ViewResult;
+            var result = controller.Detail(IdOfInvalidStore) as ViewResult;
 
 
             // Assert
             Assert.IsNotNull(result);
             Assert.AreEqual("error", result.ViewName, "Error page should appear if store id is invalid");
+
+        }
+
+
+        [TestMethod]
+        public void Index()
+        {
+
+            // Arrange
+            int RandomPage = 5;
+            var mockTime = new Mock<IDateTime>();
+
+            // we don't care the id of the store, we should always return a null value to make this test work.
+            var mockStoreRepostiroy = new Mock<IStoresRepository>();
+            //todo: setup some list of store.
+            mockStoreRepostiroy.Setup(st => st.GetStores())
+                .Returns((IQueryable<Store>)null);
+
+
+            MagasinsController controller = new MagasinsController(mockStoreRepostiroy.Object, mockTime.Object);
+
+            // Act
+            var result = controller.Index(RandomPage) as ViewResult;
+
+
+            // Assert
+            Assert.IsNotNull(result);
+           
 
         }
     }

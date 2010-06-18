@@ -1,5 +1,6 @@
 using System.Linq;
 using MatozDz.ViewModel;
+using System.Collections.Generic;
 
 namespace MatozDz.Models
 {
@@ -40,6 +41,14 @@ namespace MatozDz.Models
             var wilayas = _db.Wilaya;
             return wilayas;
         }
+
+
+        public IQueryable<Wilaya> GetAllWilayasThatStartWith(string q)
+        {
+            var wilayas = _db.Wilaya.Where(x => x.name.StartsWith(q));
+            return wilayas;
+        }
+
 
         public void Save()
         {
@@ -112,6 +121,12 @@ namespace MatozDz.Models
             return (user != null);
         }
 
+        public Wilaya GetWilayaById(string id)
+        {
+            var idWilaya = int.Parse(id);
+            var wilaya = _db.Wilaya.Where(p => p.WilayaId == idWilaya).FirstOrDefault();
+            return wilaya;
+        }
         
     }
 }

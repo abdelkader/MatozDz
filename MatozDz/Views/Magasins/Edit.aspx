@@ -20,44 +20,44 @@
                 <%= Html.LabelFor(model => model.name) %>
             </div>
             <div class="editor-field">
-                <%= Html.TextBoxFor(model => model.name) %>
-                <%= Html.ValidationMessageFor(model => model.name) %>
+                <%= Html.TextBoxFor(model => model.name)%>
+                <%= Html.ValidationMessageFor(model => model.name)%>
             </div>
             
             <div class="editor-label">
-                <%= Html.LabelFor(model => model.address) %>
+                <%= Html.LabelFor(model => model.address)%>
             </div>
             <div class="editor-field">
-                <%= Html.TextBoxFor(model => model.address) %>
-                <%= Html.ValidationMessageFor(model => model.address) %>
+                <%= Html.TextBoxFor(model => model.address)%>
+                <%= Html.ValidationMessageFor(model => model.address)%>
             </div>
             
             <div class="editor-label">
-                <%= Html.LabelFor(model => model.phone) %>
+                <%= Html.LabelFor(model => model.phone)%>
             </div>
             <div class="editor-field">
-                <%= Html.TextBoxFor(model => model.phone) %>
-                <%= Html.ValidationMessageFor(model => model.phone) %>
+                <%= Html.TextBoxFor(model => model.phone)%>
+                <%= Html.ValidationMessageFor(model => model.phone)%>
             </div>
             
             <div class="editor-label">
-                <%= Html.LabelFor(model => model.url) %>
+                <%= Html.LabelFor(model => model.url)%>
             </div>
             <div class="editor-field">
-                <%= Html.TextBoxFor(model => model.url) %>
-                <%= Html.ValidationMessageFor(model => model.url) %>
+                <%= Html.TextBoxFor(model => model.url)%>
+                <%= Html.ValidationMessageFor(model => model.url)%>
             </div>
             
             <div class="editor-label">
-                <%= Html.LabelFor(model => model.email) %>
+                <%= Html.LabelFor(model => model.email)%>
             </div>
             <div class="editor-field">
-                <%= Html.TextBoxFor(model => model.email) %>
-                <%= Html.ValidationMessageFor(model => model.email) %>
+                <%= Html.TextBoxFor(model => model.email)%>
+                <%= Html.ValidationMessageFor(model => model.email)%>
             </div>
             
             <div class="editor-label">
-                <%= Html.LabelFor(model => model.Wilaya) %>
+                <%= Html.LabelFor(model => model.Wilaya)%>
             </div>
             <div class="editor-field">
               <%= Html.DropDownList("WilayaId", (IEnumerable<SelectListItem>)ViewData["Wilayas"])%>

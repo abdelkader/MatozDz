@@ -7,15 +7,62 @@
 
 <asp:Content ID="Content3" ContentPlaceHolderID="HeaderContent" runat="server">
 
+    
+<script language="javascript" type="text/javascript" src="<%=Url.Content("~/Scripts/MicrosoftAjax.js") %>"></script>
+<script language="javascript" type="text/javascript" src="<%=Url.Content("~/Scripts/MicrosoftMvcAjax.js") %>"></script>    
+<script language="javascript" type="text/javascript" src="<%=Url.Content("~/Scripts/jquery.jeditable.js") %>"></script>
+
 <script language="javascript" type="text/javascript">
 
     $(function() {
-      $(".supprimerCommentaire").click(function() {
+    
+//     $(".CommentText").editable("projects/jeditable/php/save.php", { 
+//    indicator : '<img src="img/indicator.gif">',
+//    data   : "{'Lorem ipsum':'Lorem ipsum','Ipsum dolor':'Ipsum dolor','Dolor sit':'Dolor sit'}",
+//    type   : "textarea",
+//    submit : "Enregistrer",
+//    style  : "inherit",
+//    submitdata : function() {
+//      return {id : 2};
+//    }
+//  });
 
+
+    
+     $('.CommentText').editable("projects/jeditable/php/save.php", { 
+            type: "textarea",
+            cancel: 'Cancel',
+            submit: 'Update Gallery Description',
+            indicator: '<img src="/images/ajax-loader.gif">',
+            tooltip: 'Click to edit...',
+            onblur    : "ignore",
+           
+        }).focus( function(){
+            $('textarea').bind('keypress',function(){validate($('textarea'))} ) 
+        });
+        
+        function validate(e){
+        var limit=10; 
+        var limit2=9; 
+            if(e.val().length < (limit))
+            {
+            }
+            else
+            {   
+                $(e).removeClass().addClass("sidenavOver"); 
+                $(e).val($(e).val().substr(0, limit2));
+                alert("Max character count exceeded.");
+            }
+        } 
+     
+     
+         
+      
+      $(".supprimerCommentaire").click(function() {
         $(this).parents(".CommentItem").animate({ backgroundColor: "#fbc7c7" }, "fast")
-		.animate({ opacity: "hide" }, "slow")
-        return false;
-         });
+		.animate({ opacity: "hide" }, "slow");
+        });
+
     
         $("img.rating").mouseover(function() {
             giveRating($(this), "FilledStar.png");
@@ -50,7 +97,10 @@
     
     <fieldset>
         <legend>Detail du magasin :  <%= Html.Encode(Model.Store.name) %></legend>
-        
+        <% if (   User.Identity.IsAuthenticated && 
+                  ( User.IsInRole("Admin") || User.IsInRole("Modo") || Model.Comment.UserPosted == User.Identity.Name ) 
+              )
+         { %>
         <p>
             <img src="<%= Url.Content("~/Content/img/EmptyStar.png") %>"  class="rating" alt="Star Rating" align="middle" id="1" />
             <img src="<%= Url.Content("~/Content/img/EmptyStar.png") %>"  class="rating" alt="Star Rating" align="middle" id="2" />
@@ -59,7 +109,8 @@
             <img src="<%= Url.Content("~/Content/img/EmptyStar.png") %>"  class="rating" alt="Star Rating" align="middle" id="5" />
         </p>
         <div id="result"></div>
-        
+         <% } %> 
+         
         <div class="display-label">name</div>
         <div class="display-field"><%= Html.Encode(Model.Store.name)%></div>
         
@@ -76,7 +127,7 @@
         <div class="display-field"><%= Html.Encode(Model.Store.email)%></div>
         
         <div class="display-label">Wilaya</div>
-        <div class="display-field"><%= Html.Encode(Model.Store.name)%></div>
+        <div class="display-field"><%= Html.Encode(Model.Store.Wilaya.name)%></div>
         
         <div class="display-label">Date Ajouté</div>
         <div class="display-field"><%= Html.Encode(String.Format("{0:dd/MM/yyyy}", Model.Store.DateAdded))%></div>
@@ -97,21 +148,15 @@
                        )
                    { %>
                    <span class="icons">
-                    <%= Html.ActionLinkWithImage(Url.Content("~/Content/img/edit.png"), "EditCommentaire", new { commentId = item.Id, storeId = Model.Store.StoreId,  })%>
-                    
-                    
-                    <%--<%= Html.ActionLinkWithImage(Url.Content("~/Content/img/supprimer.png"), "SupprimerCommentaire", new { commentId = item.Id, storeId = Model.Store.StoreId })%>--%>
 
-                  
-
-            <a href="<%=Url.Action("SupprimerCommentaire", new { commentId = item.Id, storeId = Model.Store.StoreId,  })%>"  class="supprimerCommentaire">
-            <img src="<%= Url.Content("~/Content/img/supprimer.png")%>" alt="Supprimer Commentaire" /></a>
-
-
-
+            <a href="<%=Url.Action("EditerCommentaire", new { commentId = item.Id })%>"  class="EditerCommentaire">
+            <img src="<%= Url.Content("~/Content/img/edit.png")%>" alt="Editer Commentaire" /></a>
+            
+            <%= Ajax.ActionLink("[imglnk]", "SupprimerCommentaire",
+                               new { commentId = item.Id }, new AjaxOptions { }, new { @class = "supprimerCommentaire" }
+                                               ).ToString().Replace("[imglnk]", "<img src=\"/Content/img/supprimer.png\">")%> 
  
-
-                   </span>
+               </span>
                 <% } %>
        
                     <h3 ><%= Html.Encode(item.UserPosted) %></h3>
@@ -151,14 +196,20 @@
        
         <%--Ajout de commentaire--%>
         <br/>
-  
-    </fieldset>
-    <p>
         
-        <%= Html.ActionLink("Edit", "Edit", new { id=Model.Store.StoreId }) %> |
-        <%= Html.ActionLink("Supprimer", "Supprimer", new { id = Model.Store.StoreId })%> |
-        <%= Html.ActionLink("Back to List", "Wilaya") %>
-    </p>
+        <% if (   User.Identity.IsAuthenticated && 
+                  ( User.IsInRole("Admin") || User.IsInRole("Modo") || Model.Comment.UserPosted == User.Identity.Name ) 
+              )
+         { %>
+            <p>
+                
+                <%= Html.ActionLink("Editer", "Edit", new { id=Model.Store.StoreId }) %> |
+                <%= Html.ActionLink("Supprimer", "Supprimer", new { id = Model.Store.StoreId })%> |
+                <%= Html.ActionLink("Liste principale", "Wilaya") %>
+            </p>
+         <% } %>
+    </fieldset>
+    
         
 
 </asp:Content>

@@ -9,6 +9,9 @@ namespace MatozDz.Models
         IQueryable<Store> GetLastAddedStores(int? nbStoresTodDisplay);
         IQueryable<Store> GetStoresByWilaya(string wilaya);
         IQueryable<Wilaya> GetAllWilayas();
+        IQueryable<Wilaya> GetAllWilayasThatStartWith(string q);
+        Wilaya GetWilayaById(string p);
+
         void Save();
         void Add(Store store, string id);
         IQueryable<Store> GetStoresByWilayaId(int id);
@@ -19,8 +22,11 @@ namespace MatozDz.Models
         void AddComment(Comment comment, int storeId);
         void DeleteComment(int commentId);
 
-
         bool CheckUser(string user);
+
+
+
+        
     }
 }
 
