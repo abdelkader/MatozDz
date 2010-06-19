@@ -34,7 +34,6 @@ httpd.parse.errors
 # deploy/*
  
 # Exclude ALL DLLs? (
-*.dll
 
 # Exclude ALL PDBs? (
 *.pdb
