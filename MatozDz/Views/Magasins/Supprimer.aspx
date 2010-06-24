@@ -8,10 +8,15 @@
 
     <h2>Supprimer</h2>
 
-    <h3>Are you sure you want to delete this?</h3>
+    
     <fieldset>
-        <legend>Fields</legend>
-     
+        <legend>Êtes vous sûr d'effacer ce magasin ?</legend>
+     <% using (Html.BeginForm()) { %>
+        <p>
+		    <input type="submit" value="Delete" /> 
+		    
+        </p>
+    <% } %>
         <div class="display-label">name</div>
         <div class="display-field"><%= Html.Encode(Model.name) %></div>
         
@@ -25,16 +30,12 @@
         <div class="display-label">Dernière Modification</div>
         <div class="display-field"><%= Html.Encode(String.Format("{0:g}", Model.LastDateUpdated)) %></div>
         
-        <div class="display-label">Ajouté par l'User</div>
+        <div class="display-label">Ajouté par l'utilisateur</div>
         <div class="display-field"><%= Html.Encode(Model.AddedByUser) %></div>
         
+    <%= Html.ActionLink("Back to List", "Magasins") %>
     </fieldset>
-    <% using (Html.BeginForm()) { %>
-        <p>
-		    <input type="submit" value="Delete" /> |
-		    <%= Html.ActionLink("Back to List", "Magasins") %>
-        </p>
-    <% } %>
+   
 
 </asp:Content>
 

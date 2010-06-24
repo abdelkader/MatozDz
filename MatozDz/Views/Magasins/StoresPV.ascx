@@ -7,11 +7,11 @@
     <table>
         <tr>
             <th></th>
-            <th>name</th>
-            <th>address</th>
-            <th>phone</th>
-            <th>url</th>
-            <th>email</th>
+            <th>Nom</th>
+            <th>adresse</th>
+            <th>Téléphone</th>
+            <th>Site Web</th>
+            <th>Email</th>
         </tr>
 
     <% foreach (var item in Model) { %>

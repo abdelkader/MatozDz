@@ -37,6 +37,25 @@ namespace MatozDz.Helpers
         }
 
 
+        public static string AjaxActionLinkWithImage(this  AjaxHelper html, string imgSrc, string actionName, object routeValues)
+        {
+
+            UrlHelper urlHelper = new UrlHelper(html.ViewContext.RequestContext);
+            string imgUrl = urlHelper.Content(imgSrc);
+            TagBuilder imgTagBuilder = new TagBuilder("img");
+            imgTagBuilder.MergeAttribute("src", imgUrl);
+            string img = imgTagBuilder.ToString(TagRenderMode.Normal);
+            string url = urlHelper.Action(actionName, routeValues);
+
+            TagBuilder tagBuilder = new TagBuilder("a")
+            {
+                InnerHtml = img
+            };
+
+            tagBuilder.MergeAttribute("href", url);
+            return tagBuilder.ToString(TagRenderMode.Normal);
+        }
+
         
 
      

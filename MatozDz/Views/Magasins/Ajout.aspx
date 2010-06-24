@@ -23,10 +23,11 @@
             </div>
             
             <div class="editor-label">
+            
                 <%= Html.LabelFor(model => model.address) %>
             </div>
             <div class="editor-field">
-                <%= Html.TextBoxFor(model => model.address) %>
+               <%= Html.TextAreaFor(model => model.address, new { rows = 5, cols = 59 })%>
                 <%= Html.ValidationMessageFor(model => model.address) %>
             </div>
             

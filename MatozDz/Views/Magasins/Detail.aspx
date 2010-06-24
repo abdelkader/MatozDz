@@ -16,48 +16,7 @@
 
     $(function() {
     
-//     $(".CommentText").editable("projects/jeditable/php/save.php", { 
-//    indicator : '<img src="img/indicator.gif">',
-//    data   : "{'Lorem ipsum':'Lorem ipsum','Ipsum dolor':'Ipsum dolor','Dolor sit':'Dolor sit'}",
-//    type   : "textarea",
-//    submit : "Enregistrer",
-//    style  : "inherit",
-//    submitdata : function() {
-//      return {id : 2};
-//    }
-//  });
-
-
-    
-     $('.CommentText').editable("projects/jeditable/php/save.php", { 
-            type: "textarea",
-            cancel: 'Cancel',
-            submit: 'Update Gallery Description',
-            indicator: '<img src="/images/ajax-loader.gif">',
-            tooltip: 'Click to edit...',
-            onblur    : "ignore",
-           
-        }).focus( function(){
-            $('textarea').bind('keypress',function(){validate($('textarea'))} ) 
-        });
-        
-        function validate(e){
-        var limit=10; 
-        var limit2=9; 
-            if(e.val().length < (limit))
-            {
-            }
-            else
-            {   
-                $(e).removeClass().addClass("sidenavOver"); 
-                $(e).val($(e).val().substr(0, limit2));
-                alert("Max character count exceeded.");
-            }
-        } 
-     
-     
-         
-      
+   
       $(".supprimerCommentaire").click(function() {
         $(this).parents(".CommentItem").animate({ backgroundColor: "#fbc7c7" }, "fast")
 		.animate({ opacity: "hide" }, "slow");
@@ -84,10 +43,14 @@
         });
     });
 
+    
+     function updateCommentItem() {
+       $('div').effect("highlight", {}, 3000);
+     }
     function giveRating(img, image) {
         img.attr("src", "<%= Url.Content("~/Content/img/") %>" + image)
                .prevAll("img").attr("src", "<%= Url.Content("~/Content/img/") %>" + image);
-    }    
+    } 
 </script>
 
 
@@ -140,32 +103,13 @@
       
        <br/><br/>
         <h2>Liste des Commentaires </h2>
+    
         <ol id="step">
-           <% foreach (var item in Model.Store.Comment) { %>
-              <li class="CommentItem">
-                <% if ( User.Identity.IsAuthenticated &&
-                        (User.IsInRole("Admin") || User.IsInRole("Modo") || item.UserPosted == User.Identity.Name)
-                       )
-                   { %>
-                   <span class="icons">
-
-            <a href="<%=Url.Action("EditerCommentaire", new { commentId = item.Id })%>"  class="EditerCommentaire">
-            <img src="<%= Url.Content("~/Content/img/edit.png")%>" alt="Editer Commentaire" /></a>
-            
-            <%= Ajax.ActionLink("[imglnk]", "SupprimerCommentaire",
-                               new { commentId = item.Id }, new AjaxOptions { }, new { @class = "supprimerCommentaire" }
-                                               ).ToString().Replace("[imglnk]", "<img src=\"/Content/img/supprimer.png\">")%> 
- 
-               </span>
-                <% } %>
-       
-                    <h3 ><%= Html.Encode(item.UserPosted) %></h3>
-                    <span class="time"><%= Html.Encode(String.Format("{0:dd/MM/yyyy}", item.DatePosted))%></span>
-                    <div class="CommentText"><%= item.Text %></div>
-               </li>
-          <% } %>
-          
-       </ol>
+           <% foreach (var item in Model.Store.Comment)
+              { %>
+             <% Html.RenderPartial("CommentPV", item);%>
+             <% } %>
+        </ol>
        
        
        <br/><br/>
@@ -175,7 +119,11 @@
               )
          { %>
 
-                <% using (Html.BeginForm("AjoutCommentaire", "Magasins")) {%>
+                <% using (Ajax.BeginForm("AjoutCommentaire", "Magasins", new AjaxOptions 
+                                                       { UpdateTargetId = "step",
+                                                       InsertionMode = InsertionMode.InsertAfter,
+                                                       OnSuccess = "updateCommentItem"}))
+                   {%>
                 
                 <div class="editor-label">
                     <%= Html.LabelFor(model => model.Comment.Text) %>
@@ -184,8 +132,6 @@
                     <%= Html.Hidden("storeId", Model.Store.StoreId)%>
                     <%= Html.ValidationMessageFor(model => model.Comment.Text)%>
                     <%= Html.TextAreaFor(model => model.Comment.Text, new { rows = 5, cols = 59 })%>
-                    <div class="wmd-preview"></div>
-                    
                 </div>
                 
                 <p>

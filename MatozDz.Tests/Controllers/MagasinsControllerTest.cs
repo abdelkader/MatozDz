@@ -53,12 +53,16 @@ namespace MatozDz.Tests.Controllers
             // Arrange
             int RandomPage = 5;
             var mockTime = new Mock<IDateTime>();
+            IQueryable<Store> fakeStores = new List<Store>
+                                           {
+                                               new Store() { name = "aa"}
+                                           }.AsQueryable();
 
             // we don't care the id of the store, we should always return a null value to make this test work.
             var mockStoreRepostiroy = new Mock<IStoresRepository>();
             //todo: setup some list of store.
             mockStoreRepostiroy.Setup(st => st.GetStores())
-                .Returns((IQueryable<Store>)null);
+                .Returns(fakeStores);
 
 
             MagasinsController controller = new MagasinsController(mockStoreRepostiroy.Object, mockTime.Object);
@@ -72,5 +76,7 @@ namespace MatozDz.Tests.Controllers
            
 
         }
+
+         
     }
 }

@@ -36,6 +36,7 @@
             
 <div class="contentbox">
     <h3>Magasins</h3>
+    <p><%= Html.ActionLink("Liste des magasins","","Magasins") %></p>
     <p><%= Html.ActionLink("Ajouter...","Ajout","Magasins") %></p>
 
 </div>

@@ -112,6 +112,7 @@
     <Content Include="Scripts\jquery.jeditable.js" />
     <Content Include="Todo.txt" />
     <Content Include="Views\Magasins\Ajout.aspx" />
+    <Content Include="Views\Magasins\CommentPV.ascx" />
     <Content Include="Views\Magasins\Detail.aspx" />
     <Content Include="Views\Magasins\Edit.aspx" />
     <Content Include="Views\Magasins\error.aspx" />

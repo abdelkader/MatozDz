@@ -128,7 +128,7 @@ namespace MatozDz.Controllers
             _repository.Add(store, wilayaId);
             _repository.Save();
 
-            return RedirectToAction("Wilaya", new { id = wilayaId });
+            return RedirectToAction("Wilaya", new { id = store.Wilaya.name });
 
             
         }
@@ -203,7 +203,7 @@ namespace MatozDz.Controllers
         public ActionResult Supprimer(int id)
         {
             var store = _repository.GetStoreById(id);
-            return View(store);
+            return View(store.Store);
         }
 
         //
@@ -232,26 +232,36 @@ namespace MatozDz.Controllers
         [ValidateInput(false)] 
         public ActionResult AjoutCommentaire(Comment comment, int storeId)
         {
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    comment.UserPosted = User.Identity.Name;
-                    comment.DatePosted = _date.GetDate();
+            //if (ModelState.IsValid)
+            //{
+            //    try
+            //    {
+            //        comment.UserPosted = User.Identity.Name;
+            //        comment.DatePosted = _date.GetDate();
 
 
-                    _repository.AddComment(comment, storeId);
-                    _repository.Save();
+            //        _repository.AddComment(comment, storeId);
+            //        _repository.Save();
 
-                    return RedirectToAction("Detail", new { id = storeId });
-                }
-                // Todo Add exception handling.
-                catch (Exception e)
-                {
-                    ;
-                    // ModelState.AddRuleViolations(dinner.GetRuleViolations());
-                }
-            }
+            //        return RedirectToAction("Detail", new { id = storeId });
+            //    }
+            //    // Todo Add exception handling.
+            //    catch (Exception e)
+            //    {
+            //        ;
+            //        // ModelState.AddRuleViolations(dinner.GetRuleViolations());
+            //    }
+            //}
+
+
+            comment.UserPosted = User.Identity.Name;
+            comment.DatePosted = _date.GetDate();
+          
+            _repository.AddComment(comment, storeId);
+            _repository.Save();
+
+            if (Request.IsAjaxRequest())
+                return PartialView("CommentPV", comment);
 
             return RedirectToAction("Detail", new { id = storeId });
         }
