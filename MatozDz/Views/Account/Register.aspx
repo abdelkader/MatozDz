@@ -46,37 +46,36 @@
 
 
 <asp:Content ID="registerContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2>Create a New Account</h2>
     <p class="spacer">
-        Use the form below to create a new account. 
+        Utiliser le formulaire pour créer un nouveau compte
    
-        Passwords are required to be a minimum of <%=Html.Encode(ViewData["PasswordLength"])%> characters in length.
+        La longueur du mot de passe doit dépasser <%=Html.Encode(ViewData["PasswordLength"])%> caractères.
     </p>
     <%= Html.ValidationSummary("La création du compte a échoué, veuillez corriger les informations et essayer de nouveau.") %>
 
     <% using (Html.BeginForm()) { %>
         <div>
             <fieldset>
-                <legend>Account Information</legend>
+                <legend>Information sur le compte</legend>
                 <p>
-                    <label for="username">Username:</label>
+                    <label for="username">Identifiant:</label>
                     <%= Html.TextBox("username") %>
                     <%= Html.ValidationMessage("username") %>
-                    <input  type="button" id="btnCheck" value="Check!" />
+                    <input  type="button" id="btnCheck" value="Vérifier !" />
                     <div id="divStatus"></div>
                 </p>
                 <p>
-                    <label for="email">Email:</label>
+                    <label for="email">Courriel:</label>
                     <%= Html.TextBox("email") %>
                     <%= Html.ValidationMessage("email") %>
                 </p>
                 <p>
-                    <label for="password">Password:</label>
+                    <label for="password">Mot de passe:</label>
                     <%= Html.Password("password") %>
                     <%= Html.ValidationMessage("password") %>
                 </p>
                 <p>
-                    <label for="confirmPassword">Confirm password:</label>
+                    <label for="confirmPassword">Confirmer le mot de passe:</label>
                     <%= Html.Password("confirmPassword") %>
                     <%= Html.ValidationMessage("confirmPassword") %>
                 </p>

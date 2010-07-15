@@ -5,9 +5,16 @@
 </asp:Content>
 
 <asp:Content ID="aboutContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2>About</h2>
-    <p>
-       This website has been redesigned using Visual Studio 2008 and C# where needed. I even added some jQuery this time around.
-       A blog will be added shortly, along with a few MVC projects I want to build.
-    </p>
+    <h2>À Propos</h2>
+    
+    <fieldset>
+     <legend>Pourquoi ce site...?</legend>
+     <p>
+        Ce site a été conçu avec Visual Studio 2008 (Prochainement porté vers visual studio 2010), et C# en utilisant le framework ASP.net MVC. 
+        Quelques librairies, ainsi que des composantes  ont été ajoutés, tels que JQuey, MVCPager...
+
+     </p> 
+    </fieldset>
+    
+    
 </asp:Content>

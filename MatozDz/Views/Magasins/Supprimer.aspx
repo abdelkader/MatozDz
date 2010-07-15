@@ -10,17 +10,17 @@
 
     
     <fieldset>
-        <legend>Êtes vous sûr d'effacer ce magasin ?</legend>
+        <legend>Êtes vous sûr de supprimer ce magasin ?</legend>
      <% using (Html.BeginForm()) { %>
         <p>
 		    <input type="submit" value="Delete" /> 
 		    
         </p>
     <% } %>
-        <div class="display-label">name</div>
+        <div class="display-label">Nom</div>
         <div class="display-field"><%= Html.Encode(Model.name) %></div>
         
-        <div class="display-label">adresse</div>
+        <div class="display-label">Adresse</div>
         <div class="display-field"><%= Html.Encode(Model.address) %></div>
         
         
@@ -33,7 +33,7 @@
         <div class="display-label">Ajouté par l'utilisateur</div>
         <div class="display-field"><%= Html.Encode(Model.AddedByUser) %></div>
         
-    <%= Html.ActionLink("Back to List", "Magasins") %>
+    <%= Html.ActionLink("Retour à la liste principale", "Index")%>
     </fieldset>
    
 

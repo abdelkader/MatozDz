@@ -35,8 +35,8 @@
             <ul>
             
            
-                <li><a href="<%= Url.Content("~/") %>">Home</a></li>
-                <li><a href= "<%= Url.Content("~/home/about") %>">About</a></li>
+                <li><a href="<%= Url.Content("~/") %>">Accueil</a></li>
+                <li><a href= "<%= Url.Content("~/home/about") %>">À Propos</a></li>
                
 
             </ul>

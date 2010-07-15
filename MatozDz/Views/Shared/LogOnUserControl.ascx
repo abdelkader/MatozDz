@@ -3,14 +3,14 @@
 <%
     if (Request.IsAuthenticated) {
 %>
-        <img src="<%= Url.Content("~/Content/img/User.png")%>" alt="User image" /> 
+        <img src="<%= Url.Content("~/Content/img/User.png")%>" alt="Icone de l'utilisateur" /> 
         Welcome <b><%= Html.Encode(Page.User.Identity.Name) %></b>!
-        [ <%= Html.ActionLink("Log Off", "LogOff", "Account") %> ]
+        [ <%= Html.ActionLink("Se Déconnecter...", "LogOff", "Account") %> ]
 <%
     }
     else {
 %> 
-        [ <%= Html.ActionLink("Log On", "LogOn", "Account") %> ]
+        [ <%= Html.ActionLink("Se Connecter...", "LogOn", "Account") %> ]
 <%
     }
 %>

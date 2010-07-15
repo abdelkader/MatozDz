@@ -5,9 +5,8 @@
 </asp:Content>
 
 <asp:Content ID="loginContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2 >Log On</h2>
     <p class="spacer"> 
-        Please enter your username and password. <%= Html.ActionLink("Register", "Register") %> if you don't have an account.
+        SVP, entrez vos informations <%= Html.ActionLink("S'enregistrer", "Register") %> Si vous avez pas de compte.
     </p>
     <%= Html.ValidationSummary("Login was unsuccessful. Please correct the errors and try again.") %>
 
@@ -16,17 +15,17 @@
             <fieldset>
                 <legend>Account Information</legend>
                 <p>
-                    <label for="username">Username:</label>
+                    <label for="username">Identifiant:</label>
                     <%= Html.TextBox("username") %>
                     <%= Html.ValidationMessage("username") %>
                 </p>
                 <p>
-                    <label for="password">Password:</label>
+                    <label for="password">Mot de passe:</label>
                     <%= Html.Password("password") %>
                     <%= Html.ValidationMessage("password") %>
                 </p>
                 <p>
-                    <%= Html.CheckBox("rememberMe") %> <label class="inline" for="rememberMe">Remember me?</label>
+                    <%= Html.CheckBox("rememberMe") %> <label class="inline" for="rememberMe">Se rappeler de moi?</label>
                 </p>
                 <p>
                     <input type="submit" value="Se connecter" />

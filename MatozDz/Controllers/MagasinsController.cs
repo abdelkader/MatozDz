@@ -119,8 +119,7 @@ namespace MatozDz.Controllers
                
             var wilayaId = Request.Form["WilayaId"];
 
-            store.AddedByUser = User.Identity.Name;
-            store.UpdatedByUser = User.Identity.Name;
+            store.AddedByUser = store.UpdatedByUser =  User.Identity.Name;
             store.DateAdded = _date.GetDate();
             store.LastDateUpdated = _date.GetDate();
 
@@ -206,9 +205,7 @@ namespace MatozDz.Controllers
             return View(store.Store);
         }
 
-        //
-        // POST: /Toto/Delete/5
-
+     
         [HttpPost, Authorize]
         public ActionResult Supprimer(int id, Store store)
         {
@@ -226,33 +223,11 @@ namespace MatozDz.Controllers
             }
         }
 
-       
-        //todo add comment
+        
         [HttpPost]
         [ValidateInput(false)] 
         public ActionResult AjoutCommentaire(Comment comment, int storeId)
         {
-            //if (ModelState.IsValid)
-            //{
-            //    try
-            //    {
-            //        comment.UserPosted = User.Identity.Name;
-            //        comment.DatePosted = _date.GetDate();
-
-
-            //        _repository.AddComment(comment, storeId);
-            //        _repository.Save();
-
-            //        return RedirectToAction("Detail", new { id = storeId });
-            //    }
-            //    // Todo Add exception handling.
-            //    catch (Exception e)
-            //    {
-            //        ;
-            //        // ModelState.AddRuleViolations(dinner.GetRuleViolations());
-            //    }
-            //}
-
 
             comment.UserPosted = User.Identity.Name;
             comment.DatePosted = _date.GetDate();
@@ -266,7 +241,7 @@ namespace MatozDz.Controllers
             return RedirectToAction("Detail", new { id = storeId });
         }
 
-        //todo add comment
+        
         public ActionResult SupprimerCommentaire(int commentId)
         {
 
@@ -274,8 +249,7 @@ namespace MatozDz.Controllers
             _repository.Save();
 
             return new EmptyResult();
-
-            //return RedirectToAction("Detail", new { id = storeId });
+            
         }
     }
 }
